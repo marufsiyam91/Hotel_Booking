@@ -3,6 +3,7 @@
      justify-content: space-between;
      width: 90%;
      margin: 0 auto;
+     padding: 8rem 0;
 }
 
 .about_info_contant_area{
@@ -23,6 +24,8 @@
 
 .about_info_contant_area h5{
      font-size: 1rem;
+     color: var(--grayishcolor);
+     line-height: 1.5rem;
 }
 
 .about_international_tour_info{
@@ -48,6 +51,11 @@
      font-size: 1.5rem;
 }
 
+.about_international_tour_info p, .tour_option_info p{
+     color: var(--grayishcolor);
+     font-weight: 500;
+}
+
 .tour_option_info{
      display: flex;
      align-items: center;
@@ -56,14 +64,11 @@
 .about_info_image_area div{
      height: auto;
      border-radius: 1rem;
-     background: red;
 }
 
 .about_info_image_area{
      display: grid;
-
-     grid-template-columns: repeat(12, 50px);
-     grid-template-rows: repeat(100px, 100px, 100px, 50px);
+     grid-template-columns: repeat(12, 48px);
      grid-template-areas: 
           '. . . . . . o o o o o o'
           't t t t t t o o o o o o'

@@ -10,7 +10,8 @@
      --lastfont: 'Edu NSW ACT Foundation', cursive;
      --basecolor: #fff;
      --primarycolor: #FF6B00;
-
+     --grayishcolor: #5a5a5a;
+     --cursivefontcolor: #ffc42e;
 }
 
 *{

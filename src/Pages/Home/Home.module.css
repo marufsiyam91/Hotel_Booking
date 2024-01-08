@@ -7,6 +7,16 @@
      transform: translateY(-50%);
 }
 
+.about_us_main_area{
+     margin-top: -6rem;
+     width: 100%;
+     background: rgba(233, 233, 233, 0.9) url('https://img.freepik.com/free-photo/blue-brushstrokes-background_125540-809.jpg?w=826&t=st=1704718768~exp=1704719368~hmac=b3218d84d1cd5394ef0997e14458b9fc64d0814df4ba504be4e234fafcce20af');
+     background-blend-mode: overlay;
+     background-size: cover;
+     background-repeat: no-repeat;
+     background-position: center;
+}
+
 .Subscribe_area{
      position: relative;
      transform: translateY(50%);

@@ -1,0 +1,28 @@
+.choose_travic_wrapper{
+     width: 90%;
+     margin: 0 auto;
+     padding: 8rem 0;
+     font-family: var(--specialfont);
+}
+
+.choose_travic_top_content{
+     text-align: center;
+}
+
+.choose_travic_top_content h4{
+     font-family: var(--cursivefont);
+     font-size: 1.5rem;
+     color: var(--cursivefontcolor);
+     font-weight: 500;
+}
+
+.choose_travic_top_content h2{
+     font-size: 2.2rem;
+     margin: 1rem 0;
+}
+
+.choose_travic_cards_wrapper{
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+}
