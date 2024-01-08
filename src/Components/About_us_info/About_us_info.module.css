@@ -1,0 +1,108 @@
+.about_info_wrapper{
+     display: flex;
+     justify-content: space-between;
+     width: 90%;
+     margin: 0 auto;
+}
+
+.about_info_contant_area{
+     font-family: var(--specialfont);
+     padding: 5rem 0;
+}
+
+.about_info_contant_area h4{
+     font-family: var(--cursivefont);
+     font-size: 2.5rem;
+     color: #ffc42e;
+}
+
+.about_info_contant_area h2{
+     font-size: 2.2rem;
+     margin: .8rem 0;
+}
+
+.about_info_contant_area h5{
+     font-size: 1rem;
+}
+
+.about_international_tour_info{
+     display: flex;
+     align-items: center;
+     margin: 1.5rem 0;
+}
+
+.tour_info_icon ,.tour_options{
+     font-size: 1.3rem;
+     width: 35px;
+     height: 35px;
+     background: rgba(255, 133, 19, 0.295);
+     color: var(--primarycolor);
+     border-radius: 50%;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     margin-right: .5rem;
+}
+
+.about_international_tour_info h3, .tour_option_info h3{
+     font-size: 1.5rem;
+}
+
+.tour_option_info{
+     display: flex;
+     align-items: center;
+}
+
+.about_info_image_area div{
+     height: auto;
+     border-radius: 1rem;
+     background: red;
+}
+
+.about_info_image_area{
+     display: grid;
+
+     grid-template-columns: repeat(12, 50px);
+     grid-template-rows: repeat(100px, 100px, 100px, 50px);
+     grid-template-areas: 
+          '. . . . . . o o o o o o'
+          't t t t t t o o o o o o'
+          't t t t t t e e e e . .'
+          '. . . . . . e e e e . .'
+     ;
+
+}
+
+.image_one{
+     grid-area: o;
+     overflow: hidden;
+}
+
+.image_one:hover  img{
+     transform: scale(1.1);
+}
+
+.image_two{
+     grid-area: t;
+     overflow: hidden;
+     margin-right: .5rem;
+}
+
+.image_two:hover  img{
+     transform: scale(1.1);
+}
+
+.image_three{
+     grid-area: e;
+     overflow: hidden;
+     margin-top: .5rem;
+}
+
+.image_three:hover  img{
+     transform: scale(1.1);
+}
+
+.image_one img, .image_two img, .image_three img{
+     height: 100%;
+     transition: all 0.3s ease;
+}
