@@ -1,0 +1,72 @@
+.form_wrapper{
+     width: 100%;
+     display: flex;
+     justify-content: center;
+     padding: 60px 0;
+}
+
+.register_form{
+     width: 26rem;
+     height: 550px;
+     text-align: center;
+     background: #fff;
+     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+     border-radius: 1rem;
+     font-family: var(--thirdfont);
+     padding: 3rem;
+}
+
+.register_form img{
+     width: 7vw;
+}
+
+.register_form .google_signup_btn{
+     padding: 8px 18px;
+     border: none;
+     border-radius: 6px;
+     font-size: .9rem;
+     font-weight: 500;
+     margin: 1rem 0;
+     font-size: .9rem;
+     font-weight: 500;
+}
+
+.flex_register_google{
+     display: flex;
+     align-items: center;
+}
+
+.register_form .google_icon{
+     font-size: 1.2rem;
+     transform: translateY(12%);
+     margin-right: 5px;
+}
+
+.register_form h2{
+     margin: .3rem 0;
+}
+
+.input_boxes{
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+}
+
+.input_boxes input{
+     width: 95%;
+     padding: 12px 10px;
+     border: 1px solid #dadada;
+     border-radius: 8px;
+     margin-top: .7rem;
+}
+
+.rigister_btn{
+     width: 95%;
+     padding: 10px;
+     background: #000;
+     border: none;
+     border-radius: 18px;
+     font-family: var(--thirdfont);
+     color: #fff;
+     margin: 1rem 0;
+}

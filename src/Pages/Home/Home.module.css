@@ -1,0 +1,13 @@
+.hero_area_wrapper{
+     position: relative;
+}
+
+.hero_input_area{
+     position: relative;
+     transform: translateY(-50%);
+}
+
+.Subscribe_area{
+     position: relative;
+     transform: translateY(50%);
+}

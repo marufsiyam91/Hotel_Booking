@@ -1,0 +1,71 @@
+.subscribe_wrapper{
+     margin: 0 auto;
+     width: 90%;
+     height: 20rem;
+     background: rgb(83,254,201);
+     background: linear-gradient(149deg, rgba(83,254,201,1) 3%, rgba(255,79,2,1) 78%);
+     border-radius: 1rem;
+     display: flex;
+     justify-content: space-between;
+     padding: 0 0 0 1vw;
+     position: relative;
+}
+
+.subscribe_content{
+     padding: 5rem 0 0 3rem;
+}
+
+.subscribe_content h2{
+     font-family: var(--specialfont);
+     font-size: 2.2rem;
+     color: #111111;
+}
+
+.subscribe_content img{
+     position: absolute;
+     top: 0;
+     left: 1rem;
+}
+
+.subscribe_content .subscribe_overlay_image{
+     position: absolute;
+     top: 6.6rem;
+     left: 4rem;
+}
+
+.subscribe_parashoot_image_wrapper{
+     height: 100%;
+}
+
+.subscribe_parashoot_image_wrapper img{
+     position: absolute;
+     height: 100%;
+     top: 0;
+
+     right: 0;
+     border-radius: 0 1rem 1rem 0;
+}
+
+.subscribe_content input, .subscribe_content button{
+     font-family: var(--thirdfont);
+     font-size: .9rem;
+     border: none;
+     margin-top: 1.8rem;
+     border-radius: .3rem;
+     font-weight: 500;
+     position: relative;
+     z-index: 1;
+}
+
+.subscribe_content input {
+     width: 16rem; 
+     margin-right: .6rem;
+     padding: .8rem 1rem;
+}
+
+.subscribe_content button{
+     padding: .8rem 1.5rem;
+     color: #fff;
+     background: #111111;
+}
+

@@ -1,0 +1,30 @@
+.homepage_wrapper{
+     height: calc(100vh - 4rem);
+     background: url('https://theme.easital.com/html/liston/v2.1/assets/images/header/lg-03.jpg'), rgba(255, 142, 66, 0.192);
+     background-blend-mode: lighten;
+     background-position: center;
+     background-size: cover;
+     background-repeat: no-repeat;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+}
+
+.homepage_wrapper h3{
+     font-family: var(--cursivefont);
+     color: #FFC42E;
+     font-size: 2rem;
+}
+
+.homepage_wrapper h4{
+     font-family: var(--thirdfont);
+     color: #fff;
+     margin-top: .6rem;
+}
+
+.homepage_wrapper h1{
+     font-family: var(--thirdfont);
+     color: #fff;
+     font-size: 4rem;
+}
