@@ -1,15 +1,22 @@
 import { useEffect, useState } from "react";
 import styles from "./TourPackages.module.css";
 import SingleTour from "../SingleTour/SingleTour";
+import FeaturedSortBtn from "../FeaturedSortBtn/FeaturedSortBtn";
 
 const TourPackages = () => {
   const [tours, setTours] = useState([]);
+  const [state, setState] = useState('ASIA')
 
   useEffect(() => {
     fetch("http://localhost:3000/hotels")
       .then((res) => res.json())
       .then((data) => setTours(data));
   }, []);
+
+
+  const handleClick = (filter) => {
+    setState(filter)
+  }
 
   return (
     <div className={styles.Tour_compo_container}>
@@ -20,12 +27,15 @@ const TourPackages = () => {
             <h2>Featured Tours</h2>
           </div>
           <div className={styles.tour_package_top_btns}>
-            
+            <FeaturedSortBtn onClick={() => handleClick('ASIA')}>ASIA</FeaturedSortBtn>
+            <FeaturedSortBtn onClick={() => handleClick('AMERICA')}>AMERICA</FeaturedSortBtn>
+            <FeaturedSortBtn onClick={() => handleClick('AFRICA')}>AFRICA</FeaturedSortBtn>
+            <FeaturedSortBtn onClick={() => handleClick('EUROPE')}>EUROPE</FeaturedSortBtn>
           </div>
         </div>
 
         <div className={styles.tour_packages_container}>
-          {tours.slice(0, 8).map((tour) => (
+          {tours.filter(tour => tour.region === state).map((tour) => (
             <SingleTour key={tour.id} tour={tour} />
           ))}
         </div>

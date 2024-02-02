@@ -1,6 +1,12 @@
-.footer_container{
+.footer_compo_container{
      width: 100%;
-     background: #111111;  
+     background: #111111;
+}
+
+
+.footer_container{
+     margin: 0 auto;
+     width: 1280px;
      color: #fff;
      height: 620px;
      display: flex;

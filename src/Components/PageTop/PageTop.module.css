@@ -1,0 +1,34 @@
+.pageTop_container{
+    width: 100%;
+}
+
+.page_top_back_image{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.page_top_back_image img{
+    filter: brightness(70%);
+}
+
+.page_top_content{
+    max-width: 1280px;
+    margin: 0 auto;
+    position: absolute;
+}
+
+.page_top_content h2{
+    font-family: var(--cursivefont);
+    color: var(--cursivefontcolor);
+    font-size: 2.8rem;
+}
+
+.page_top_content h1{
+    font-family: var(--specialfont);
+    font-size: 4rem;
+    color: #fff;
+}
