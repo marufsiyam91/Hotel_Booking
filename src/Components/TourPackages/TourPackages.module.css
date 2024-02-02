@@ -1,4 +1,14 @@
 .tour_packages_container{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1.5rem;
+}
+
+.Tour_compo_container{
+    background: url('https://azim.hostlin.com/Travic/assets/images/shape/shape-2.png');
+}
+
+.Tour_compo_content{
+    width: 90%;
+    margin: 0 auto;
 }

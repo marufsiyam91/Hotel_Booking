@@ -1,6 +1,7 @@
 /* eslint-disable react/prop-types */
 
 import styles from './SingleTour.module.css'
+import { TiStarFullOutline } from "react-icons/ti";
 
 const SingleTour = ({tour: {title, country, price, stayingtime, image, discount, rating}}) => {
 
@@ -10,6 +11,7 @@ const SingleTour = ({tour: {title, country, price, stayingtime, image, discount,
         <div className={styles.singletour_image_area}>
             <img src={image} alt="Tour" />
             <div className={styles.package_rating}>
+                <span><TiStarFullOutline /></span>
                 <small>{rating}</small>
             </div>
         </div>
