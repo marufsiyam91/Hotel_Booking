@@ -1,14 +1,20 @@
-.homepage_wrapper{
-     height: calc(100vh - 4rem);
+.home_component{
+     width: 100%;
      background: url('https://theme.easital.com/html/liston/v2.1/assets/images/header/lg-03.jpg'), rgba(255, 142, 66, 0.192);
      background-blend-mode: lighten;
      background-position: center;
      background-size: cover;
      background-repeat: no-repeat;
+}
+
+.homepage_wrapper{
+     height: calc(100vh - 4rem);
      display: flex;
      flex-direction: column;
      align-items: center;
      justify-content: center;
+     max-width: 1280px;
+     margin: 0 auto;
 }
 
 .homepage_wrapper h3{

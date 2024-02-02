@@ -4,7 +4,7 @@ import { LuLayers } from "react-icons/lu";
 
 const About_us_info = () => {
   return (
-    <div className='container'>
+    <div className={styles.about_us_info_container}>
           <div className={styles.about_info_wrapper}>
                <div className={styles.about_info_contant_area}>
                     <h4>about us</h4>

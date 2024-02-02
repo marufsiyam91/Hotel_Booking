@@ -23,9 +23,11 @@
 body{
      margin: 0 auto;
      font-family: var(--primaryfont);
+     width: 100%;
+     
 }
 
-.container{
+/* .container{
      margin: 0 auto;
      max-width: 1280px;
-}
+} */

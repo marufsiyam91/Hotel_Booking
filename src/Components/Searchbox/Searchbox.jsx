@@ -19,56 +19,59 @@ const Searchbox = () => {
     },
   ]);
 
-
-
   //calender show or not show handler
 
   const handleShowCalender = () => {
-     setShowCalender(prevstate => !prevstate)
-  }
-
+    setShowCalender((prevstate) => !prevstate);
+  };
 
   return (
-    <div className={styles.searchbox_wrapper}>
-      <label className={styles.left_border}>
-        <CiMap />
-        <input type="text" name="destination" placeholder="Your destination" />
-      </label>
-
-      <label>
-        <BiCategory />
-        <input
-          type="text"
-          name="travel_category"
-          placeholder="Travel category"
-        />
-      </label>
-
-      <label>
-        <GoPeople />
-        <input type="number" name="guest" placeholder="How many Guest" />
-      </label>
-
-      <button onClick={handleShowCalender} className={styles.calender_btn}>
-        <span className={styles.calender_flex}>
-          <span className={styles.calender_icon}>
-            <CiCalendar />
-          </span>{" "}
-          When to start
-        </span>
-      </button>
-
-      <button className={styles.find_now_btn}>Find Now</button>
-      {showCalender && (
-        <span className={styles.date_calender}>
-          <DateRange
-            editableDateInputs={true}
-            onChange={(item) => setState([item.selection])}
-            moveRangeOnFirstSelection={false}
-            ranges={state}
+    <div className={styles.searchbox_container}>
+      <div className={styles.searchbox_wrapper}>
+        <label className={styles.left_border}>
+          <CiMap />
+          <input
+            type="text"
+            name="destination"
+            placeholder="Your destination"
           />
-        </span>
-      )}
+        </label>
+
+        <label>
+          <BiCategory />
+          <input
+            type="text"
+            name="travel_category"
+            placeholder="Travel category"
+          />
+        </label>
+
+        <label>
+          <GoPeople />
+          <input type="number" name="guest" placeholder="How many Guest" />
+        </label>
+
+        <button onClick={handleShowCalender} className={styles.calender_btn}>
+          <span className={styles.calender_flex}>
+            <span className={styles.calender_icon}>
+              <CiCalendar />
+            </span>{" "}
+            When to start
+          </span>
+        </button>
+
+        <button className={styles.find_now_btn}>Find Now</button>
+        {showCalender && (
+          <span className={styles.date_calender}>
+            <DateRange
+              editableDateInputs={true}
+              onChange={(item) => setState([item.selection])}
+              moveRangeOnFirstSelection={false}
+              ranges={state}
+            />
+          </span>
+        )}
+      </div>
     </div>
   );
 };

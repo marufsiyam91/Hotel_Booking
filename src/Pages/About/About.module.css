@@ -1,0 +1,23 @@
+.about_top_part {
+    background: url('https://azim.hostlin.com/Travic/assets/images/background/page-title.jpg');
+    background-position: center;
+    background-size: contain;
+    height: 267px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.about_top_part h2{
+    font-family: var(--cursivefont);
+    color: var(--cursivefontcolor);
+    font-size: 2.8rem;
+}
+
+.about_top_part h1{
+    font-family: var(--specialfont);
+    font-size: 4rem;
+    color: #fff;
+}

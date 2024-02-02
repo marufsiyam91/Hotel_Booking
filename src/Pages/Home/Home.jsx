@@ -7,33 +7,32 @@ import Choose_Travic from "../../Components/Choose_Travic/Choose_Travic";
 import TourPackages from "../../Components/TourPackages/TourPackages";
 
 const Home = () => {
-
-
-
   return (
     <div className="container">
-      <div className={styles.hero_area_wrapper}>
-        <HeroComponent/>
-      </div>
+      <div className={styles.home_wrapper}>
+        <div className={styles.hero_area_wrapper}>
+          <HeroComponent />
+        </div>
 
-      <div className={styles.hero_input_area}>
-        <Searchbox/>
-      </div>
+        <div className={styles.hero_input_area}>
+          <Searchbox />
+        </div>
 
-      <div className={styles.about_us_main_area}>
-        <About_us_info/>
-      </div>
+        <div className={styles.about_us_main_area}>
+          <About_us_info />
+        </div>
 
-      <div className={styles.choose_travic_area}>
-        <Choose_Travic/>
-      </div>
+        <div className={styles.choose_travic_area}>
+          <Choose_Travic />
+        </div>
 
-      <div className={styles.tourpackage}>
-          <TourPackages/>
-      </div>
+        <div className={styles.tourpackage}>
+          <TourPackages />
+        </div>
 
-      <div className={styles.Subscribe_area}>
-          <Subscribe_main/>
+        <div className={styles.Subscribe_area}>
+          <Subscribe_main />
+        </div>
       </div>
     </div>
   );

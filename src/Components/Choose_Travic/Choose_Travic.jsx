@@ -7,7 +7,7 @@ import { MdOutlineSecurity } from "react-icons/md";
 
 const Choose_Travic = () => {
   return (
-    <div className='container'>
+    <div className={styles.choose_travic_container}>
           <div className={styles.choose_travic_wrapper}>
                <div className={styles.choose_travic_top_content}>
                     <h4>We are fast</h4>
