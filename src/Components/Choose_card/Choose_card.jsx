@@ -2,7 +2,6 @@
 import styles from './Choose_card.module.css'
 
 const Choose_card = ({image, title, description}) => {
-     console.log(image)
   return (
     <div className={styles.choose_travic_card_container}>
           <span>{image}</span>

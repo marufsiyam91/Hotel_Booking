@@ -1,0 +1,145 @@
+{
+    "hotels": [
+        {
+            "id": 1,
+            "title": "Beauty of Istanbul Turkey",
+            "country": "TURKEY",
+            "price": "$199",
+            "stayingtime": "6 Night / 7 Days",
+            "image": "https://azim.hostlin.com/Travic/assets/images/resource/tour-1.jpg",
+            "discount": "30%",
+            "rating": 4.8
+        },
+        {
+            "id": 2,
+            "title": "Wildness of California",
+            "country": "USA",
+            "price": "$250",
+            "stayingtime": "4 Nights / 5 Days",
+            "image": "https://azim.hostlin.com/Travic/assets/images/resource/tour-2.jpg",
+            "discount": "30%",
+            "rating": 5
+        },
+        {
+            "id": 3,
+            "title": "Ocean on the Maldives",
+            "country": "MALDIVES",
+            "price": "$150",
+            "stayingtime": "5 Nights / 6 Days",
+            "image": "https://azim.hostlin.com/Travic/assets/images/resource/tour-3.jpg",
+            "discount": "20%",
+            "rating": 4.0
+        },
+        {
+            "id": 4,
+            "title": "The Hills and Mountains",
+            "country": "AFRICA",
+            "price": "$299",
+            "stayingtime": "6 Nights / 7 Days",
+            "image": "https://azim.hostlin.com/Travic/assets/images/resource/tour-4.jpg",
+            "discount": "5%",
+            "rating": 4.5
+        },
+        {
+            "id": 5,
+            "title": "History of The Emporer",
+            "country": "ITALY",
+            "price": "$199",
+            "stayingtime": "6 Nights / 7 Days",
+            "image": "https://azim.hostlin.com/Travic/assets/images/resource/tour-5.jpg",
+            "discount": "5%",
+            "rating": 5
+        },
+        {
+            "id": 6,
+            "title": "The old Empire of China",
+            "country": "CHINA",
+            "price": "$189",
+            "stayingtime": "3 Nights / 4 Days",
+            "image": "https://azim.hostlin.com/Travic/assets/images/resource/tour-6.jpg",
+            "discount": "20%",
+            "rating": 4.2
+        },
+        {
+            "id": 7,
+            "title": "History of the Mughals",
+            "country": "INDIA",
+            "price": "$119",
+            "stayingtime": "2 Nights / 3 Days",
+            "image": "https://azim.hostlin.com/Travic/assets/images/resource/tour-7.jpg",
+            "discount": "25%",
+            "rating": 4.1
+        },
+        {
+            "id": 8,
+            "title": "The New York City Tour",
+            "country": "USA",
+            "price": "$239",
+            "stayingtime": "5 Nights / 6 Days",
+            "image": "https://azim.hostlin.com/Travic/assets/images/resource/tour-8.jpg",
+            "discount": "24%",
+            "rating": 4.8
+        },
+        {
+            "id": 9,
+            "title": "Beauty of Istanbul Turkey",
+            "country": "JAPAN",
+            "price": "$139",
+            "stayingtime": "6 Nights / 7 Days",
+            "image": "https://azim.hostlin.com/Travic/assets/images/resource/tour-12.jpg",
+            "discount": "20%",
+            "rating": 5
+        },
+        {
+            "id": 10,
+            "title": "The Hills and Mountains",
+            "country": "AFRICA",
+            "price": "$299",
+            "stayingtime": "6 Nights / 7 Days",
+            "image": "https://azim.hostlin.com/Travic/assets/images/resource/tour-13.jpg",
+            "discount": "10%",
+            "rating": 4.5
+        },
+        {
+            "id": 11,
+            "title": "History of The Emporer",
+            "country": "ITALY",
+            "price": "$199",
+            "stayingtime": "6 Nights / 7 Days",
+            "image": "https://azim.hostlin.com/Travic/assets/images/resource/tour-14.jpg",
+            "discount": "30%",
+            "rating": 5
+        },
+        {
+            "id": 12,
+            "title": "The old Empire of China",
+            "country": "CHINA",
+            "price": "$189",
+            "stayingtime": "3 Nights / 4 Days",
+            "image": "https://azim.hostlin.com/Travic/assets/images/resource/tour-15.jpg",
+            "discount": "30%",
+            "rating": 4.2
+        },
+        {
+            "id": 13,
+            "title": "The New York City Tour",
+            "country": "USA",
+            "price": "$239",
+            "stayingtime": "5 Nights / 6 Days",
+            "image": "https://azim.hostlin.com/Travic/assets/images/resource/tour-17.jpg",
+            "discount": "20%",
+            "rating": 4.8
+        },
+        {
+            "id": 14,
+            "title": "Beauty of Istanbul Turkey",
+            "country": "JAPAN",
+            "price": "$139",
+            "stayingtime": "6 Nights / 7 Days",
+            "image": "https://azim.hostlin.com/Travic/assets/images/resource/tour-18.jpg",
+            "discount": "20%",
+            "rating": 4.8
+        }
+
+    ]
+}
