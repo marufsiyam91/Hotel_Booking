@@ -17,6 +17,14 @@
 
 .tour_package_top_area{
     margin-bottom: 2.8rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+
+.tour_package_top_btns{
+    display: flex;
+    justify-content: space-between;
 }
 
 .headings h3{

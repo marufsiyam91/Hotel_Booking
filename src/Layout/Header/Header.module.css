@@ -1,12 +1,19 @@
+.navbar_container{
+     width: 100%;
+     background: #FFF5ED;
+     border-radius: 12px 12px 0 0;
+     height: 4rem;
+}
+
 .navbar_wrapper{
+     max-width: 1280px;
+     height: 100%;
+     margin: 0 auto;
      display: flex;
      justify-content: space-between;
      padding: 0 1rem;
      align-items: center;
      margin-top: .8rem;
-     border-radius: 12px 12px 0 0;
-     height: 4rem;
-     background: #FFF5ED;
 }
 
 .logo_area img{

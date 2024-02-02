@@ -1,13 +1,21 @@
 /* eslint-disable react/prop-types */
-import styles from './FeaturedSortBtn.module.css'
+import styles from "./FeaturedSortBtn.module.css";
 
-
-const FeaturedSortBtn = ({children, onClick}) => {
+const FeaturedSortBtn = ({ children, onClick, isColored }) => {
   return (
     <div className={styles.featured_sort_btn_container}>
-        <button onClick={onClick}>{children}</button>
+      <button
+        style={{
+          background: isColored === children && "#FF6B00",
+          color: isColored === children && "#fff",
+        }}
+        className={styles.filter_tour_btn}
+        onClick={onClick}
+      >
+        {children}
+      </button>
     </div>
-  )
-}
+  );
+};
 
-export default FeaturedSortBtn
+export default FeaturedSortBtn;

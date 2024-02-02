@@ -1,0 +1,9 @@
+.filter_tour_btn{
+    background: transparent;
+    border-radius: .2rem;
+    padding: .6rem 1.2rem;
+    font-family: var(--specialfont);
+    font-weight: 600;
+    margin-left: .5rem;
+    border: none;
+}

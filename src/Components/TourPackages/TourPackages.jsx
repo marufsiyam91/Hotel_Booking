@@ -27,10 +27,10 @@ const TourPackages = () => {
             <h2>Featured Tours</h2>
           </div>
           <div className={styles.tour_package_top_btns}>
-            <FeaturedSortBtn onClick={() => handleClick('ASIA')}>ASIA</FeaturedSortBtn>
-            <FeaturedSortBtn onClick={() => handleClick('AMERICA')}>AMERICA</FeaturedSortBtn>
-            <FeaturedSortBtn onClick={() => handleClick('AFRICA')}>AFRICA</FeaturedSortBtn>
-            <FeaturedSortBtn onClick={() => handleClick('EUROPE')}>EUROPE</FeaturedSortBtn>
+            <FeaturedSortBtn isColored={state} onClick={() => handleClick('ASIA')}>ASIA</FeaturedSortBtn>
+            <FeaturedSortBtn isColored={state} onClick={() => handleClick('AMERICA')}>AMERICA</FeaturedSortBtn>
+            <FeaturedSortBtn isColored={state} onClick={() => handleClick('AFRICA')}>AFRICA</FeaturedSortBtn>
+            <FeaturedSortBtn isColored={state} onClick={() => handleClick('EUROPE')}>EUROPE</FeaturedSortBtn>
           </div>
         </div>
 

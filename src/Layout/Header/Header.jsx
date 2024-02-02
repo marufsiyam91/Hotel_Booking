@@ -4,6 +4,7 @@ import styles from './Header.module.css'
 const Header = () => {
   return (
     <div className='container'>
+          <div className={styles.navbar_container}>
           <div className={styles.navbar_wrapper}>
                <div className={styles.logo_area}>
                     <img src={'https://azim.hostlin.com/Travic/assets/images/logo.png'} alt="Travik" />
@@ -21,6 +22,7 @@ const Header = () => {
                     <NavLink to={'/signup'}><button>Register</button></NavLink>
                     <NavLink to={'/signin'}><button>Sign in</button></NavLink>
                </div>
+          </div>
           </div>
     </div>
   )
