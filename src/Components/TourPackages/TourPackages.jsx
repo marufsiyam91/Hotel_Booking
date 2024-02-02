@@ -19,7 +19,9 @@ const TourPackages = () => {
             <h3>Tour Packages</h3>
             <h2>Featured Tours</h2>
           </div>
-          <div className={styles.tour_package_top_btns}></div>
+          <div className={styles.tour_package_top_btns}>
+            
+          </div>
         </div>
 
         <div className={styles.tour_packages_container}>

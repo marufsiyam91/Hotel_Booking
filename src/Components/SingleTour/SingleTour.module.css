@@ -1,7 +1,7 @@
 .single_tour{
     background: #fff;
     border-radius: .8rem;
-    min-height: 400px;
+    min-height: 380px;
 }
 
 .singletour_image_area{
@@ -17,7 +17,7 @@
     top: .3rem;
     right: .8rem;
     background: #fff;
-    width: 2.5rem;
+    width: 2.8rem;
     border-radius: .5rem;
     display: flex;
     align-items: center;
@@ -26,6 +26,7 @@
 
 .package_rating span{
     color: #f1ce08;
+    margin-right: .2rem;
 }
 
 .singletour_image_area:hover img{
@@ -37,4 +38,50 @@
     border-radius: .8rem .8rem 0 0;
     transform: scale(1);
     transition: all 0.5s ease;
+}
+
+.tour_package_details{
+    padding: 1.5rem .8rem;
+    font-family: var(--specialfont);
+}
+
+.tour_package_details p{
+    color: #50505096;
+    font-weight: 700;
+    font-size: .9rem;
+}
+
+.tour_package_details h3{
+    font-size: 1.3rem;
+    margin: .2rem 0 .5rem 0;
+}
+
+.tour_package_details h4{
+    font-size: 1rem;
+    color: #50505096;
+}
+
+.tour_package_details h4 span{
+    color: var(--primarycolor);
+    font-size: 1.3rem;
+}
+
+.tour_package_details h5{
+    margin: .5rem 0 1rem 0;
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+.tour_package_details button{
+    background: none;
+    border: none;
+    outline: none;
+    font-family: var(--specialfont);
+    font-size: 1.3rem;
+    display: flex;
+    align-items: center;
+}
+
+.tour_package_details button span{
+    margin-left: .5rem;
 }
