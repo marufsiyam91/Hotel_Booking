@@ -5,7 +5,7 @@ const ContactInfoCard = ({img, title1, title2, heading}) => {
   return (
     <div className={styles.contactinfo_card_container}>
         <div className={styles.contactinfo_card_image}>
-          {img}
+          <span>{img}</span>
         </div>
         <h2>{heading}</h2>
         <p>{title1}</p>

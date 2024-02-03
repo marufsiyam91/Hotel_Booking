@@ -1,0 +1,45 @@
+.contactinfo_card_container {
+  background: #fff;
+  border-radius: 0.8rem;
+  height: 20rem;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  transition: all 0.5s ease;
+}
+
+.contactinfo_card_image {
+  height: 6rem;
+  width: 6rem;
+  background: #ff6b00;
+  border-radius: 0.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contactinfo_card_image span {
+  font-size: 2.3rem;
+  color: var(--basecolor);
+}
+
+.contactinfo_card_container h2{
+    font-family: var(--specialfont);
+    margin: .8rem;
+}
+
+.contactinfo_card_container p{
+    font-family: var(--primaryfont);
+    margin-bottom: .3rem;
+}
+
+
+
+
+
+.contactinfo_card_container:hover{
+    transform: translateY(-.5rem);
+}
