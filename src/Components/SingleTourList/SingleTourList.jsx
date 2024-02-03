@@ -9,8 +9,10 @@ const SingleTourList = ({
       <div className={styles.single_tourlist_wrapper}>
         <div className={styles.single_tourlist_image_area}>
           <img src={image} alt="tour" />
-          <span>{rating}</span>
-          <span>{discount}</span>
+          <div className={styles.tourist_list_offer}>
+            <p>{rating}</p>
+            <p>{discount}</p> 
+          </div>
         </div>
 
         <div className={styles.single_tourlist_detail}>
