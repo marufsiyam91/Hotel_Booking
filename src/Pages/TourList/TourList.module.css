@@ -1,0 +1,9 @@
+.tour_list_container{
+    width: 100%;
+    background: #faf6f2;
+}
+
+.tour_list_wrapper{
+    max-width: 1280px;
+    margin: 0 auto;
+}
