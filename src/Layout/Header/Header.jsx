@@ -13,6 +13,8 @@ const Header = () => {
                <div className={styles.mainmenu}>
                     <ul>
                          <li><NavLink to={'/'}>Home</NavLink></li>
+                         <li><NavLink to={'/tourlist'}>Tour List</NavLink></li>
+
                          <li><NavLink to={'/about'}>About</NavLink></li>
                          <li><NavLink to={'/contact'}>Contact</NavLink></li>
                     </ul>

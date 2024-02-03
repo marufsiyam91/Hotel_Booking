@@ -6,6 +6,7 @@ import Contact from '../Pages/Contact/Contact'
 import NotFound from '../Pages/NotFound/NotFound'
 import Login from '../Pages/Login/Login'
 import Register from '../Pages/Register/Register'
+import TourList from '../Pages/TourList/TourList'
 
 const Routes = createBrowserRouter ([
      {
@@ -15,6 +16,10 @@ const Routes = createBrowserRouter ([
                {
                     path: '/',
                     element: <Home/>
+               },
+               {
+                    path: '/tourlist',
+                    element: <TourList/>
                },
                {
                     path: '/about',
