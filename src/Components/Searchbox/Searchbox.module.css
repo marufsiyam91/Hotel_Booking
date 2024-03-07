@@ -21,8 +21,8 @@ label{
      display: flex;
      font-size: 1.5rem;
      color: var(--primarycolor);
-     padding: 0 12px;
-     border-right: 1px solid #575757;
+     padding-left: .5rem;
+     border-left: 1px solid #575757;
 }
 
 .left_border{
@@ -30,6 +30,7 @@ label{
 }
 
 .searchbox_wrapper input{
+     max-width: 100px;
      border: none;
      outline: none;
      margin-left: 8px;
@@ -45,6 +46,8 @@ label{
      background: transparent;
      border: none;
      outline: none;
+     border-left: 1px solid #575757;
+     padding-left: .5rem;
 }
 
 .calender_icon{
@@ -59,8 +62,7 @@ label{
 }
 
 .find_now_btn{
-     height: 88%;
-     width: 6.8rem;
+     padding: 1.8rem 1rem;
      border-radius: 0 12px 12px 0;
      border: none;
      outline: none;
@@ -74,3 +76,4 @@ label{
      top: 6rem;
      right: 8.625rem;
 }
+

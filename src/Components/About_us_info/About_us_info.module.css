@@ -1,11 +1,13 @@
 .about_us_info_container{
-     width: 100%;
+     max-width: 1280px;
+     margin: 0 auto;
 }
 
 .about_info_wrapper{
      display: flex;
      justify-content: space-between;
-     max-width: 1280px;
+     gap: .5rem;
+     max-width: 90%;
      margin: 0 auto;
      padding: 8rem 0;
 }
@@ -114,4 +116,29 @@
 .image_one img, .image_two img, .image_three img{
      height: 100%;
      transition: all 0.3s ease;
+}
+
+
+
+
+@media (max-width: 992px) {
+     .about_info_wrapper{
+          flex-direction: column;
+     }
+
+     .about_info_image_area{
+          display: grid;
+          grid-template-columns: repeat(12, 58px);
+          grid-template-areas: 
+               '. . . . . . o o o o o o'
+               't t t t t t o o o o o o'
+               't t t t t t e e e e . .'
+               '. . . . . . e e e e . .'
+          ;
+     
+     }
+
+     .image_one img, .image_two img, .image_three img{
+          width: 100%;
+     }
 }

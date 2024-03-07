@@ -15,7 +15,6 @@ const TourList = () => {
 
   return (
     <div className={styles.tour_list_container}>
-      <div className={styles.tour_list_wrapper}>
         <div className={styles.tour_list_top_part}>
           <PageTop
             img={
@@ -31,7 +30,7 @@ const TourList = () => {
             <SingleTourList key={tour.id} tour={tour} />
           ))}
         </div>
-      </div>
+
     </div>
   );
 };

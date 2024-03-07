@@ -34,3 +34,15 @@
      color: #fff;
      font-size: 4rem;
 }
+
+
+
+
+@media (max-width: 768px) {
+     .homepage_wrapper h1{
+          font-size: 2rem;
+     }
+     .homepage_wrapper h3{
+          font-size: 1.5rem;
+     }
+}

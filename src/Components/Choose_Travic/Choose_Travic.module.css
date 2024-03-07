@@ -1,9 +1,10 @@
 .choose_travic_container{
-     width: 100%;
+     max-width: 1280px;
+     margin: 0 auto;
 }
 
 .choose_travic_wrapper{
-     max-width: 1280px;
+     width: 100%;
      margin: 0 auto;
      padding: 8rem 0;
      font-family: var(--specialfont);

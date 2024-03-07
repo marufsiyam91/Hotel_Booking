@@ -5,7 +5,7 @@ import styles from "./About.module.css";
 
 const About = () => {
   return (
-    <div className="container">
+    <div className="">
       <div className={styles.aout_top_part_wrapper}>
         <PageTop
           img={

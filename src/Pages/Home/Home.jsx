@@ -8,7 +8,7 @@ import TourPackages from "../../Components/TourPackages/TourPackages";
 
 const Home = () => {
   return (
-    <div className="container">
+    <div>
       <div className={styles.home_wrapper}>
         <div className={styles.hero_area_wrapper}>
           <HeroComponent />
