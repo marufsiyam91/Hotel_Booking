@@ -15,6 +15,7 @@ const Subscribe_main = () => {
           <h2>Subscribe for latest update</h2>
           <h2>about Travelling</h2>
 
+<div className={styles.subscribe_info_provider}>
           <input type="email" name="email" placeholder="Email Address*" />
           <button className={styles.subscribe_btn}>
             Subscribe
@@ -23,6 +24,7 @@ const Subscribe_main = () => {
               <FaArrowRightLong />
             </span>
           </button>
+          </div>
           <img
             className={styles.subscribe_overlay_image}
             src={

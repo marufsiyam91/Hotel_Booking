@@ -1,10 +1,11 @@
 .subscribe_main_container{
-     width: 100%;
+     max-width: 1280px;
+     margin: 0 auto;
 }
 
 .subscribe_wrapper{
+     max-width: 90%;
      margin: 0 auto;
-     max-width: 1280px;
      height: 20rem;
      background: rgb(83,254,201);
      background: linear-gradient(149deg, rgba(83,254,201,1) 3%, rgba(255,79,2,1) 78%);
@@ -67,9 +68,24 @@
      padding: .8rem 1rem;
 }
 
+.subscribe_flex{
+     margin-left: .5rem;
+}
+
 .subscribe_content button{
      padding: .8rem 1.5rem;
      color: #fff;
      background: #111111;
+     display: flex;
+     align-items: center;
+     transition: all 0.5s ease;
+}
+
+.subscribe_content button:hover{
+     color: var(--primarycolor);
+}
+
+.subscribe_info_provider{
+     display: flex;
 }
 
