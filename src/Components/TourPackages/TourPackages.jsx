@@ -21,6 +21,7 @@ const TourPackages = () => {
   return (
     <div className={styles.Tour_compo_container}>
       <div className={styles.Tour_compo_content}>
+        <div className={styles.tour_compo_width}>
         <div className={styles.tour_package_top_area}>
           <div className={styles.headings}>
             <h3>Tour Packages</h3>
@@ -38,6 +39,7 @@ const TourPackages = () => {
           {tours.filter(tour => tour.region === state).map((tour) => (
             <SingleTour key={tour.id} tour={tour} />
           ))}
+        </div>
         </div>
       </div>
     </div>

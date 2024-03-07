@@ -2,9 +2,6 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 1.5rem;
-    width: 100%;
-    max-width: 1280px;
-    margin: 0 auto;
 }
 
 .Tour_compo_container{
@@ -13,6 +10,11 @@
 }
 
 .Tour_compo_content{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.tour_compo_width{
     max-width: 90%;
     margin: 0 auto;
 }

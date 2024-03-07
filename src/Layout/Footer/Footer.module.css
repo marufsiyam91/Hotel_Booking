@@ -5,8 +5,8 @@
 
 
 .footer_container{
-     margin: 0 auto;
      width: 1280px;
+     margin: 0 auto;
      color: #fff;
      height: 620px;
      display: flex;
@@ -65,7 +65,6 @@
 }
 
 .footer_copyright_area{
-     width: 100%;
      background: #111111;
 }
 
