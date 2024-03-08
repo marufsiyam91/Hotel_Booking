@@ -48,7 +48,7 @@ const Searchbox = () => {
 
         <label>
           <GoPeople />
-          <input type="number" name="guest" placeholder="Guests " />
+          <input type="number" name="guest" placeholder="Guests number" />
         </label>
 
         <button onClick={handleShowCalender} className={styles.calender_btn}>

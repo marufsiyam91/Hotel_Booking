@@ -5,7 +5,7 @@
 
 
 .footer_container{
-     width: 1280px;
+     max-width: 1280px;
      margin: 0 auto;
      color: #fff;
      height: 620px;
@@ -16,7 +16,7 @@
 
 .footer_wrapper{
      padding: 15rem 0 0 0;
-     width: 90%;
+     width: 95%;
      margin: 0 auto;
      background: url('https://i.postimg.cc/tRDrfxh5/pngwing-com.png');
      background-position: center;
@@ -29,7 +29,7 @@
 }
 
 .footer_contact_info img{
-     width: 11vw;
+     max-width: 11vw;
 }
 
 .footer_contact_info h5{
@@ -75,7 +75,7 @@
 }
 
 .copyright_wrapper{
-     width: 90%;
+     width: 95%;
      height: 4rem;
      margin: 0 auto;
      display: flex;

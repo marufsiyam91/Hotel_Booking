@@ -5,7 +5,7 @@
 
 .searchbox_wrapper{
      margin: 0 auto;
-     width: 90%;
+     width: 95%;
      height: 6rem;
      background: #fff;
      border-radius: 12px;
@@ -30,7 +30,7 @@ label{
 }
 
 .searchbox_wrapper input{
-     max-width: 100px;
+     max-width: 120px;
      border: none;
      outline: none;
      margin-left: 8px;
