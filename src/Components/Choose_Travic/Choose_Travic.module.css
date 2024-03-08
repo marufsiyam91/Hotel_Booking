@@ -4,7 +4,7 @@
 }
 
 .choose_travic_wrapper{
-     width: 90%;
+     width: 95%;
      margin: 0 auto;
      padding: 8rem 0;
      font-family: var(--specialfont);
@@ -30,4 +30,22 @@
      display: flex;
      align-items: center;
      justify-content: space-between;
+     padding: 5rem 0;
+}
+
+
+@media (max-width: 992px) {
+     .choose_travic_cards_wrapper{
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          gap: 0 .5rem;
+     }
+}
+
+@media (max-width: 768px) {
+     .choose_travic_cards_wrapper{
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+     }
 }
