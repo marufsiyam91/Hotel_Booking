@@ -15,7 +15,7 @@
 }
 
 .tour_compo_width{
-    max-width: 90%;
+    max-width: 95%;
     margin: 0 auto;
 }
 
@@ -23,7 +23,7 @@
     margin-bottom: 2.8rem;
     display: flex;
     justify-content: space-between;
-    align-items: end;
+    align-items: flex-end;
 }
 
 .tour_package_top_btns{
@@ -42,4 +42,18 @@
 .headings h2{
     font-family: var(--specialfont);
     font-size: 2.2rem;
+}
+
+
+@media (max-width: 992px) {
+    .tour_packages_container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+@media (max-width: 768px) {
+    .tour_packages_container{
+        grid-template-columns: repeat(1, 1fr);
+    }
 }

@@ -3,9 +3,10 @@
 import styles from "./SingleTour.module.css";
 import { TiStarFullOutline } from "react-icons/ti";
 import { BsArrowRight } from "react-icons/bs";
+import { NavLink } from "react-router-dom";
 
 const SingleTour = ({
-  tour: { title, country, price, stayingtime, image, discount, rating },
+  tour: { title, country, price, stayingtime, image, discount, rating, _id },
 }) => {
   console.log(title, country, price, stayingtime, discount, rating);
   return (
@@ -25,7 +26,7 @@ const SingleTour = ({
         <h3>{title}</h3>
         <h4>From <span>{price}</span></h4>
         <h5>{stayingtime}</h5>
-        <button>Explore more <span><BsArrowRight /></span></button>
+        <NavLink to={`/tourlist/${_id}`}>Explore more <span><BsArrowRight /></span></NavLink>
       </div>
     </div>
   );

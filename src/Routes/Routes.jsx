@@ -7,6 +7,7 @@ import NotFound from '../Pages/NotFound/NotFound'
 import Login from '../Pages/Login/Login'
 import Register from '../Pages/Register/Register'
 import TourList from '../Pages/TourList/TourList'
+import SingleTourPackage from '../Pages/SingleTourPackage/SingleTourPackage'
 
 const Routes = createBrowserRouter ([
      {
@@ -20,6 +21,11 @@ const Routes = createBrowserRouter ([
                {
                     path: '/tourlist',
                     element: <TourList/>
+               },
+               {
+                    path: '/tourlist/:id',
+                    element: <SingleTourPackage/>,
+                    loader: (params) => fetch(`http://localhost:5000/hotels/${params._id}`)
                },
                {
                     path: '/about',
