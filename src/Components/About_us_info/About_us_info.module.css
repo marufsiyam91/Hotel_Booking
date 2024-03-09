@@ -43,8 +43,7 @@
 
 .tour_info_icon ,.tour_options{
      font-size: 1.3rem;
-     width: 35px;
-     height: 35px;
+     padding: 0.5rem;
      background: rgba(255, 133, 19, 0.295);
      color: var(--primarycolor);
      border-radius: 50%;
