@@ -17,3 +17,9 @@
      position: relative;
      transform: translateY(50%);
 }
+
+@media (max-width: 600px) {
+     .about_us_main_area{
+          margin-top: -12rem;
+     }
+}

@@ -11,6 +11,7 @@ const Footer = () => {
       <div className={styles.footer_container}>
         <div className={styles.footer_wrapper}>
           <div className={styles.footer_contact_info}>
+            <div>
             <img
               src={"https://azim.hostlin.com/Travic/assets/images/logo-2.png"}
               alt="Travik"
@@ -21,9 +22,9 @@ const Footer = () => {
             </h5>
             <h3>Travikinfo@support.com</h3>
             <h3>(+55) 123-456-7890</h3>
-          </div>
+            </div>
 
-          <div className={styles.footer_links}>
+            <div>
             <div className={styles.footer_about_links}>
               <h3>About</h3>
               <p>About Company</p>
@@ -33,7 +34,11 @@ const Footer = () => {
               <p>Media News</p>
               <p>Travel Guide</p>
             </div>
+            </div>
+          </div>
 
+          <div className={styles.footer_links}>
+            
             <div className={styles.top_cities_links}>
               <h3>Top Cities</h3>
               <p>London</p>

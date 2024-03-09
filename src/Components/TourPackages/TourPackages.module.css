@@ -49,11 +49,22 @@
     .tour_packages_container{
         grid-template-columns: repeat(2, 1fr);
     }
+
+    .tour_package_top_area{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
 }
 
 
 @media (max-width: 768px) {
     .tour_packages_container{
         grid-template-columns: repeat(1, 1fr);
+    }
+
+    .tour_package_top_btns{
+        flex-wrap: wrap;
+        gap: 1rem 0;
     }
 }
