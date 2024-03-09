@@ -8,8 +8,8 @@ const About_us_info = () => {
           <div className={styles.about_info_wrapper}>
                <div className={styles.about_info_contant_area}>
                     <h4>about us</h4>
-                    <h2>Planning a trip should be very <br /> exciting adventure</h2>
-                    <h5>We are dedicated to offering exceptional value for your travel investment. <br /> Our relationships with trusted travel partners</h5>
+                    <h2>Planning a trip should be very exciting adventure</h2>
+                    <h5>We are dedicated to offering exceptional value for your travel investment. Our relationships with trusted travel partners</h5>
 
                     <div className={styles.about_international_tour_info}>
                         <div className={styles.tour_info_icon}>
@@ -17,7 +17,7 @@ const About_us_info = () => {
                         </div>
                         <div className={styles.tour_info_content}>
                             <h3>International Tours</h3>
-                            <p>Our team of travel professional brings a wealth of knowledge <br /> and expertise to the table.</p>
+                            <p>Our team of travel professional brings a wealth of knowledge and expertise to the table.</p>
                         </div>
                     </div>
 
@@ -28,7 +28,7 @@ const About_us_info = () => {
 
                         <div className={styles.tour_option_content}>
                             <h3>Multiple Options to Choose</h3>
-                            <p>OPlanning trip should be an exciting adventure, not stressful <br /> ordeal. Let us handle the logistics</p>
+                            <p>OPlanning trip should be an exciting adventure, not stressful ordeal. Let us handle the logistics</p>
                         </div>
                     </div>
                     

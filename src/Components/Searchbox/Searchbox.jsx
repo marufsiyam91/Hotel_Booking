@@ -28,7 +28,9 @@ const Searchbox = () => {
   return (
     <div className={styles.searchbox_container}>
       <div className={styles.searchbox_wrapper}>
-        <label className={styles.left_border}>
+        <div className={styles.row_wrapper}>
+      <div className={styles.searchbox_first_row}>
+      <label className={styles.left_border}>
           <CiMap />
           <input
             type="text"
@@ -45,7 +47,9 @@ const Searchbox = () => {
             placeholder="Travel category"
           />
         </label>
-
+      </div>
+        
+      <div className={styles.searchbox_second_row}>
         <label>
           <GoPeople />
           <input type="number" name="guest" placeholder="Guests number" />
@@ -59,7 +63,8 @@ const Searchbox = () => {
             When to start
           </span>
         </button>
-
+        </div>
+        </div>
         <button className={styles.find_now_btn}>Find Now</button>
         {showCalender && (
           <span className={styles.date_calender}>

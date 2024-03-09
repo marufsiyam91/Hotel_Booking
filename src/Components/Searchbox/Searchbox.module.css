@@ -17,6 +17,20 @@
      padding-right: .5rem;
 }
 
+.row_wrapper{
+     display: flex;
+     width: 90%;
+     justify-content: space-between;
+
+}
+
+.searchbox_first_row, .searchbox_second_row{
+     width: 40%;
+     display: flex;
+     justify-content: space-between;
+}
+
+
 label{
      display: flex;
      font-size: 1.5rem;
@@ -77,3 +91,17 @@ label{
      right: 8.625rem;
 }
 
+
+
+@media (max-width: 992px) {
+     .searchbox_first_row, .searchbox_second_row{
+          flex-direction: column;
+          gap: 0.5rem;
+          justify-content: space-between;
+     }
+     .searchbox_wrapper{
+          height: 8rem;
+     }
+
+
+}
