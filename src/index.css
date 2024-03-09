@@ -30,7 +30,7 @@ body{
      margin: 0 auto;
      font-family: var(--primaryfont);
      width: 100%;
-     
+     background: #fff;
 }
 
 /* .container{
