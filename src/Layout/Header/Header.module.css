@@ -34,6 +34,7 @@
      font-size: 1.5rem;
      color: var(--primarycolor);
      display: none;
+     transform: translateY(-50%);
 }
 
 .sidebar_logo{
@@ -85,6 +86,31 @@
 }
 
 
+.social_links{
+     display: flex;
+     width: 100%;
+}
+
+.social_links div{
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     height: 30px;
+     width: 30px;
+     background: #ffffff80;
+     color: #fff;
+     border-radius: 50%;
+     transition: all 0.3s ease;
+     margin: 1rem 1rem 0 0;
+}
+
+.social_links div:hover{
+     color: var(--primarycolor);
+}
+
+
+
+
 @media (max-width: 992px) {
      .logo_area button{
           display: block;
@@ -97,7 +123,7 @@
      .mobile_menu_wrapper{
           width: 320px;
           height: calc(100vh - 4.8rem);
-          background: #333333;
+          background: #141417;
           position: absolute;
           top: 4rem;
           right: 0;
@@ -114,13 +140,14 @@
           display: flex;
           gap: 0;
      }
-     .mainmenu,      .mainmenu ul{
+     .mainmenu, .mainmenu ul{
           width: 100%;
      }
 
      .mainmenu ul li{
           width: 100%;
-          border-bottom: 1px solid #fff;
+          border-bottom: 1px solid #ffffff98;
+
      }
      
      .mainmenu ul li a{
@@ -128,8 +155,13 @@
           margin-left: 0.8rem;
      }
 
+     .mainmenu ul li button{
+          padding-bottom: 1rem;
+     }
+
      .mobile_menu_wrapper, .mainmenu ul, .signinup_btns{
           flex-direction: column;
+          gap: 1rem;
      }
 
      .signinup_btns button{
@@ -144,8 +176,23 @@
           margin-left: .8rem;
      }
 
+     .signinup_btns{
+          margin-top: 0.8rem;
+          width: 100%;
+     }
+
+     .sidebar_logo, .contact_info{
+          margin-left: 0.8rem;
+     }
+
      .signinup_btns button {
+          width: 100%;
           margin: 0;
+          border-bottom: 1px solid;
+          border-radius: 0;
+          text-align: left;
+          padding-left: 0.8rem;
+          padding-bottom: 0.8rem;
      }
      
      .mainmenu ul li{
@@ -160,6 +207,28 @@
           flex-direction: column;
           align-items: flex-start;
           gap: 0;
+          width: 100%;
+     }
+
+
+     .contact_info h3{
+          font-size: 1.5rem;
+          font-weight: 700;
+          color: #FFFFFF;
+          font-family: var(--specialfont);
+     }
+
+     .contact_info p{
+          font-size: 1rem;
+          color: #FFFFFF;
+          font-family: var(--specialfont);
+          margin-top: .5rem;
+     }
+}
+
+
+@media (max-width: 500px) {
+     .mobile_menu_wrapper{
           width: 100%;
      }
 }

@@ -2,10 +2,14 @@ import { NavLink } from "react-router-dom";
 import styles from "./Header.module.css";
 import { TiThMenuOutline } from "react-icons/ti";
 import { MdOutlineClose } from "react-icons/md";
+import { FaFacebookF } from "react-icons/fa";
+import { BsTwitterX } from "react-icons/bs";
+import { FaLinkedin } from "react-icons/fa";
+import { FaDiscord } from "react-icons/fa";
 import { useState } from "react";
 
 const Header = () => {
-  const [isShowSidebar, setIsShowSidebar] = useState(false);
+  const [isShowSidebar, setIsShowSidebar] = useState(true);
 
   const menuClass = isShowSidebar ? "mainmenu_wrapper" : "mobile_menu_wrapper";
 
@@ -27,7 +31,7 @@ const Header = () => {
           <div className={styles[menuClass]}>
             <div className={styles.sidebar_logo}>
               <img
-                src={"https://azim.hostlin.com/Travic/assets/images/logo.png"}
+                src={"https://azim.hostlin.com/Travic/assets/images/logo-2.png"}
                 alt="Travik"
               />
             </div>
@@ -36,17 +40,25 @@ const Header = () => {
               <div className={styles.mainmenu}>
                 <ul>
                   <li>
-                    <NavLink to={"/"}>Home</NavLink>
+                    <NavLink to={"/"}>
+                      <button>Home</button>
+                    </NavLink>
                   </li>
                   <li>
-                    <NavLink to={"/tourlist"}>Tour List</NavLink>
+                    <NavLink to={"/tourlist"}>
+                      <button>Tour List</button>
+                    </NavLink>
                   </li>
 
                   <li>
-                    <NavLink to={"/about"}>About</NavLink>
+                    <NavLink to={"/about"}>
+                      <button>About</button>
+                    </NavLink>
                   </li>
                   <li>
-                    <NavLink to={"/contact"}>Contact</NavLink>
+                    <NavLink to={"/contact"}>
+                      <button>Contact</button>
+                    </NavLink>
                   </li>
                 </ul>
               </div>
@@ -66,6 +78,21 @@ const Header = () => {
               <p>Chicago 12, Melborne City, USA</p>
               <p>+88 01682648101</p>
               <p>info@example.com</p>
+
+              <div className={styles.social_links}>
+                <div>
+                  <FaFacebookF />
+                </div>
+                <div>
+                  <BsTwitterX />
+                </div>
+                <div>
+                  <FaLinkedin />
+                </div>
+                <div>
+                  <FaDiscord />
+                </div>
+              </div>
             </div>
           </div>
         </div>
