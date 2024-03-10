@@ -16,11 +16,41 @@
      margin-top: .8rem;
 }
 
-.logo_area img{
-     width: 8vw;
+.mainmenu_wrapper{
+     display: flex;
+     align-items: center;
+     gap: 6rem;
 }
 
-.mainmenu ul{
+
+.logo_area img{
+     width: 7rem;
+}
+
+.logo_area button{
+     position: absolute;
+     right: 2rem;
+     top: 2rem;
+     font-size: 1.5rem;
+     color: var(--primarycolor);
+     display: none;
+}
+
+.sidebar_logo{
+     display: none;
+}
+
+.contact_info{
+     display: none;
+}
+
+.mainmenu_container{
+     display: flex;
+     align-items: center;
+     gap: 6rem;
+}
+
+.mainmenu ul, .signinup_btns{
      display: flex;
 }
 
@@ -37,6 +67,10 @@
      font-weight: 500;
 }
 
+.mainmenu ul li a .active{
+     color: red;
+}
+
 .signinup_btns button{
      padding: 10px 18px;
      border: none;
@@ -48,4 +82,84 @@
      font-weight: 600;
      font-size: .9rem;
      margin-left: .8rem;
+}
+
+
+@media (max-width: 992px) {
+     .logo_area button{
+          display: block;
+     }
+
+     .mainmenu_wrapper{
+          display: none;
+     }
+
+     .mobile_menu_wrapper{
+          width: 320px;
+          height: calc(100vh - 4.8rem);
+          background: #333333;
+          position: absolute;
+          top: 4rem;
+          right: 0;
+          align-items: flex-start;
+          justify-content: space-evenly;
+          padding: 4rem 0;
+     }
+
+     .sidebar_logo{
+          display: block;
+     }
+
+     .mobile_menu_wrapper{
+          display: flex;
+          gap: 0;
+     }
+     .mainmenu,      .mainmenu ul{
+          width: 100%;
+     }
+
+     .mainmenu ul li{
+          width: 100%;
+          border-bottom: 1px solid #fff;
+     }
+     
+     .mainmenu ul li a{
+          color: #ffffff;
+          margin-left: 0.8rem;
+     }
+
+     .mobile_menu_wrapper, .mainmenu ul, .signinup_btns{
+          flex-direction: column;
+     }
+
+     .signinup_btns button{
+          padding: 0;
+          border: none;
+          outline: none;
+          background: none;
+          color: var(--basecolor);
+          font-family: var(--secondaryfont);
+          font-weight: 500;
+          font-size: 1rem;
+          margin-left: .8rem;
+     }
+
+     .signinup_btns button {
+          margin: 0;
+     }
+     
+     .mainmenu ul li{
+          padding: 0;
+     }
+
+     .contact_info{
+          display: block;
+     }
+
+     .mainmenu_container{
+          flex-direction: column;
+          align-items: flex-start;
+          gap: 0;
+          width: 100%;
+     }
 }
