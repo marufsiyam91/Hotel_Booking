@@ -14,16 +14,20 @@
      justify-content: space-between;
      padding: 0 0 0 1vw;
      position: relative;
+     overflow: hidden;
 }
 
 .subscribe_content{
      padding: 5rem 0 0 3rem;
+     position: relative;
+     z-index: 1;
 }
 
 .subscribe_content h2{
      font-family: var(--specialfont);
      font-size: 2.2rem;
-     color: #111111;
+     color: #eeeeee;
+     font-weight: 700;
 }
 
 .subscribe_content img{
@@ -46,12 +50,15 @@
      position: absolute;
      height: 100%;
      top: 0;
-
      right: 0;
      border-radius: 0 1rem 1rem 0;
 }
 
-.subscribe_content input, .subscribe_content button{
+.subscribe_info_provider{
+     display: flex;
+}
+
+.subscribe_info_provider input, .subscribe_info_provider button{
      font-family: var(--thirdfont);
      font-size: .9rem;
      border: none;
@@ -62,7 +69,7 @@
      z-index: 1;
 }
 
-.subscribe_content input {
+.subscribe_info_provider input {
      width: 16rem; 
      margin-right: .6rem;
      padding: .8rem 1rem;
@@ -72,7 +79,7 @@
      margin-left: .5rem;
 }
 
-.subscribe_content button{
+.subscribe_info_provider button{
      padding: .8rem 1.5rem;
      color: #fff;
      background: #111111;
@@ -81,11 +88,59 @@
      transition: all 0.5s ease;
 }
 
-.subscribe_content button:hover{
+.subscribe_info_provider button:hover{
      color: var(--primarycolor);
 }
 
-.subscribe_info_provider{
-     display: flex;
-}
 
+
+@media (max-width: 768px) {
+     .subscribe_parashoot_image_wrapper{
+          display: none;
+     }
+
+     .subscribe_content{
+          padding: 5rem 0 0 1.5rem;
+     }
+
+     .subscribe_content h2{
+          font-size: 2rem;
+     }
+} 
+
+@media (max-width: 500px) {
+
+     .subscribe_wrapper{
+          height: auto;
+     }
+
+      .subscribe_info_provider{
+          flex-direction: column;
+          position: relative;
+          width: 100%;
+     }
+
+     .subscribe_content{
+          padding: 5rem 1rem 1rem 1rem;
+          width: 100%;
+     }
+
+     .subscribe_content button{
+          display: flex;
+          align-items: center;
+          justify-content: center;
+     } 
+
+     .subscribe_content input, .subscribe_content button{
+          margin-top: .8rem;
+     } 
+
+     .subscribe_info_provider{
+          flex-direction: column;
+     }
+     
+     .subscribe_info_provider input {
+          width: 100%;
+     }
+
+}

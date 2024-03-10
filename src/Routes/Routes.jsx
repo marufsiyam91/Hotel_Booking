@@ -25,7 +25,7 @@ const Routes = createBrowserRouter ([
                {
                     path: '/tourlist/:id',
                     element: <SingleTourPackage/>,
-                    loader: (params) => fetch(`http://localhost:5000/hotels/${params._id}`)
+                    loader: (params) => fetch(`http://localhost:5000/hotels/${params.id}`)
                },
                {
                     path: '/about',

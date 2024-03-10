@@ -8,7 +8,7 @@ import { NavLink } from "react-router-dom";
 const SingleTour = ({
   tour: { title, country, price, stayingtime, image, discount, rating, _id },
 }) => {
-  console.log(title, country, price, stayingtime, discount, rating);
+  console.log(title, country, price, stayingtime, discount, rating, _id);
   return (
     <div className={styles.single_tour}>
       <div className={styles.singletour_image_area}>
