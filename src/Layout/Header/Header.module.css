@@ -1,8 +1,8 @@
 .navbar_container{
      width: 100%;
      background: #FFF5ED;
-     border-radius: 12px 12px 0 0;
      height: 4rem;
+     position: fixed;
 }
 
 .navbar_wrapper{
@@ -13,7 +13,6 @@
      justify-content: space-between;
      padding: 0 1rem;
      align-items: center;
-     margin-top: .8rem;
 }
 
 .mainmenu_wrapper{
@@ -122,7 +121,7 @@
 
      .mobile_menu_wrapper{
           width: 320px;
-          height: calc(100vh - 4.8rem);
+          height: calc(100vh - 4rem);
           background: #141417;
           position: absolute;
           top: 4rem;
@@ -130,6 +129,7 @@
           align-items: flex-start;
           justify-content: space-evenly;
           padding: 4rem 0;
+          transition: 0.6s;
      }
 
      .sidebar_logo{

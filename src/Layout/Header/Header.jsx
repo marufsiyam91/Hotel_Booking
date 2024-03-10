@@ -14,7 +14,7 @@ const Header = () => {
   const menuClass = isShowSidebar ? "mainmenu_wrapper" : "mobile_menu_wrapper";
 
   return (
-    <div className="">
+    <div className={styles.container}>
       <div className={styles.navbar_container}>
         <div className={styles.navbar_wrapper}>
           <div className={styles.logo_area}>
