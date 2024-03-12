@@ -1,11 +1,12 @@
 .contact_detail_container{
-    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
 }
 
 .contact_detail_wrapper{
-    padding: 8rem 0;
-    max-width: 1280px;
+    max-width: 95%;
     margin: 0 auto;
+    padding: 8rem 0;
 }
 
 .contact_detail_heading{
@@ -31,4 +32,18 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 2.5rem;
+}
+
+@media (max-width: 992px) {
+    .contact_card_wrapper{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+@media (max-width: 768px) {
+    .contact_card_wrapper{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
 }

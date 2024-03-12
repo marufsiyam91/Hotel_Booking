@@ -11,9 +11,12 @@
     text-align: center;
 }
 
-.page_top_back_image img{
+.page_top_back_image img {
     filter: brightness(70%);
+    object-fit: cover;
+    width: 100%;
 }
+
 
 .page_top_content{
     max-width: 1280px;

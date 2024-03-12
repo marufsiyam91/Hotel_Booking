@@ -6,16 +6,30 @@ import { FaFacebookF } from "react-icons/fa";
 import { BsTwitterX } from "react-icons/bs";
 import { FaLinkedin } from "react-icons/fa";
 import { FaDiscord } from "react-icons/fa";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 const Header = () => {
   const [isShowSidebar, setIsShowSidebar] = useState(true);
+  const [navbar, setNavbar] = useState(false)
 
   const menuClass = isShowSidebar ? "mainmenu_wrapper" : "mobile_menu_wrapper";
+  const container = navbar ? 'scroller' : 'navbar_container' ;
+
+  useEffect(() => {
+    window.addEventListener('scroll', () => {
+      if(window.scrollY >= 80){
+        setNavbar(true)
+      } else{
+        setNavbar(false)
+      }
+
+  })
+  }, [])
+
 
   return (
     <div className={styles.container}>
-      <div className={styles.navbar_container}>
+      <div className={styles[container]}>
         <div className={styles.navbar_wrapper}>
           <div className={styles.logo_area}>
             <img

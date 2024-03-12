@@ -1,38 +1,48 @@
-@import url('https://fonts.googleapis.com/css2?family=Cabin:wght@400;500;600;700&family=Edu+NSW+ACT+Foundation:wght@400;500;600;700&family=Encode+Sans:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=Seaweed+Script&display=swap&family=Urbanist:wght@400;500;600;700&display=swap');
-
-
+@import url("https://fonts.googleapis.com/css2?family=Cabin:wght@400;500;600;700&family=Edu+NSW+ACT+Foundation:wght@400;500;600;700&family=Encode+Sans:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=Seaweed+Script&display=swap&family=Urbanist:wght@400;500;600;700&display=swap");
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-:root{
-
-     --primaryfont: 'Inter', sans-serif;
-     --secondaryfont: 'Encode Sans', sans-serif;
-     --thirdfont: 'Cabin', sans-serif;
-     --cursivefont: 'Seaweed Script', cursive;  
-     --specialfont: 'Urbanist', sans-serif;
-     --lastfont: 'Edu NSW ACT Foundation', cursive;
-     --basecolor: #fff;
-     --primarycolor: #FF6B00;
-     --grayishcolor: #5a5a5a;
-     --cursivefontcolor: #ffc42e;
+:root {
+  --primaryfont: "Inter", sans-serif;
+  --secondaryfont: "Encode Sans", sans-serif;
+  --thirdfont: "Cabin", sans-serif;
+  --cursivefont: "Seaweed Script", cursive;
+  --specialfont: "Urbanist", sans-serif;
+  --lastfont: "Edu NSW ACT Foundation", cursive;
+  --basecolor: #fff;
+  --primarycolor: #ff6b00;
+  --grayishcolor: #5a5a5a;
+  --cursivefontcolor: #ffc42e;
 }
 
-*{
-     margin: 0;
-     padding: 0;
-     box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-body{
-     margin: 0 auto;
-     font-family: var(--primaryfont);
-     width: 100%;
-     background: #fff;
+body {
+  margin: 0 auto;
+  font-family: var(--primaryfont);
+  width: 100%;
+  background: #fff;
 }
 
+body::-webkit-scrollbar {
+  width: .6em;
+}
+
+body::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: var(--primarycolor);
+  outline: 1px solid #d8d8d885;
+  border-radius: .5rem;
+}
 
 /* .container{
      margin: 0 auto;
