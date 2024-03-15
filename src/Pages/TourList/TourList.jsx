@@ -5,10 +5,11 @@ import { useEffect } from "react";
 import SingleTourList from "../../Components/SingleTourList/SingleTourList";
 
 const TourList = () => {
+
   const [tours, setTours] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:3000/hotels")
+    fetch("http://localhost:8800/hotels")
       .then((res) => res.json())
       .then((data) => setTours(data));
   }, []);

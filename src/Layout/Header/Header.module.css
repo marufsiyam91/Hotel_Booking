@@ -139,6 +139,7 @@
      }
 
      .mobile_menu_wrapper{
+          transition: 0.5s;
           width: 320px;
           height: calc(100vh - 4rem);
           background: #141417;
@@ -245,7 +246,7 @@
 
 
 @media (max-width: 500px) {
-     .mobile_menu_wrapper{
+     .mobile_menu_wrapper{    
           width: 100%;
      }
 }

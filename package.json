@@ -7,11 +7,13 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "server": "json-server --watch TravelPackages.json --port 8800"
   },
   "dependencies": {
     "date-fns": "^3.1.0",
-    "firebase": "^10.7.1",
+    "firebase": "^10.9.0",
+    "json-server": "^1.0.0-alpha.23",
     "react": "^18.2.0",
     "react-date-range": "^2.0.0-alpha.4",
     "react-dom": "^18.2.0",

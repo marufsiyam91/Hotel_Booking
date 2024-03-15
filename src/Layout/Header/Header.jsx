@@ -22,7 +22,6 @@ const Header = () => {
       } else{
         setNavbar(false)
       }
-
   })
   }, [])
 
