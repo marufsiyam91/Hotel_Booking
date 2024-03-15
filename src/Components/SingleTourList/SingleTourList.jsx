@@ -2,7 +2,7 @@ import styles from "./SingleTourList.module.css";
 
 // eslint-disable-next-line react/prop-types
 const SingleTourList = ({
-  tour: { image, title, country, region, price, stayingtime, rating, discount },
+  tour: { image, title, country, region, price, stayingtime, rating, discount, description },
 }) => {
   return (
     <div className={styles.single_tourlist_container}>
@@ -18,6 +18,7 @@ const SingleTourList = ({
         <div className={styles.single_tourlist_detail}>
             <h3>{country}</h3>
             <h2>{title}</h2>
+            <h3>{description}</h3>
         </div>
       </div>
     </div>
