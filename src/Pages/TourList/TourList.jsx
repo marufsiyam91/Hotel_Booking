@@ -3,9 +3,9 @@ import { useState } from "react";
 import PageTop from "../../Components/PageTop/PageTop";
 import { useEffect } from "react";
 import SingleTourList from "../../Components/SingleTourList/SingleTourList";
+import TourListSearchbar from "../../Components/TourList_Searchbar/TourListSearchbar";
 
 const TourList = () => {
-
   const [tours, setTours] = useState([]);
 
   useEffect(() => {
@@ -16,22 +16,26 @@ const TourList = () => {
 
   return (
     <div className={styles.tour_list_container}>
-        <div className={styles.tour_list_top_part}>
-          <PageTop
-            img={
-              "https://azim.hostlin.com/Travic/assets/images/background/page-title-2.jpg"
-            }
-            title={"all tour"}
-            heading={"Tour List"}
-          />
-        </div>
+      <div className={styles.tour_list_top_part}>
+        <PageTop
+          img={
+            "https://azim.hostlin.com/Travic/assets/images/background/page-title-2.jpg"
+          }
+          title={"all tour"}
+          heading={"Tour List"}
+        />
+      </div>
+
+      <div className={styles.serachbar_tourlist_wrapper}>
+          <TourListSearchbar/>
+
 
         <div className={styles.tour_list_showcase_area}>
           {tours.map((tour) => (
             <SingleTourList key={tour.id} tour={tour} />
           ))}
         </div>
-
+      </div>
     </div>
   );
 };
