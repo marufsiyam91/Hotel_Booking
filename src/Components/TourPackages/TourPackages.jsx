@@ -8,7 +8,7 @@ const TourPackages = () => {
   const [state, setState] = useState('ASIA')
 
   useEffect(() => {
-    fetch("http://localhost:8800/hotels")
+    fetch("http://localhost:3000/hotels")
       .then((res) => res.json())
       .then((data) => setTours(data));
   }, []);

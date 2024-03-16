@@ -10,7 +10,8 @@
             "image": "https://azim.hostlin.com/Travic/assets/images/resource/tour-1.jpg",
             "description" : "Explore the beauty of ASIA and discover the rich history and culture of the place. Enjoy a unique experience in TURKEY.", 
             "discount": "30%",
-            "rating": 4.8
+            "rating": 4.8,
+            "reviewCount":698
         },
         {
             "id": 2,
@@ -22,7 +23,8 @@
             "image": "https://www.planetware.com/wpimages/2022/05/california-top-attractions-griffith-observatory-sunset.jpg",
             "description" : "Explore the beauty of AMERICA and discover the rich history and culture of the place. Enjoy a unique experience in USA.",
             "discount": "30%",
-            "rating": 5
+            "rating": 5,
+            "reviewCount":1472
         },
         {
             "id": 3,
@@ -34,7 +36,8 @@
             "image": "https://azim.hostlin.com/Travic/assets/images/resource/tour-3.jpg",
             "description" : "Explore the beauty of ASIA and discover the rich history and culture of the place. Enjoy a unique experience in MALDIVES.",
             "discount": "20%",
-            "rating": 4.0
+            "rating": 4.0,
+            "reviewCount":543
         },
         {
             "id": 4,
@@ -46,7 +49,8 @@
             "image": "https://media1.thrillophilia.com/filestore/j2mfd8efz0iqitiu8ckgx8h0xurj_1613996202_shutterstock_654844426.jpg?w=753&h=450&dpr=1.0",
             "description" : "Enjoy a unique experience in EGYPT. Explore the beauty of AFRICA and discover the rich history and culture of the place.",
             "discount": "20%",
-            "rating": 5
+            "rating": 5,
+            "reviewCount":1821
         },
         {
             "id": 5,
@@ -58,7 +62,8 @@
             "image": "https://azim.hostlin.com/Travic/assets/images/resource/tour-5.jpg",
             "description" : "Enjoy a unique experience in ITALY. Explore the beauty of EUROPE and discover the rich history and culture of the place.",
             "discount": "5%",
-            "rating": 5
+            "rating": 5,
+            "reviewCount":2795
         },
         {
             "id": 6,
@@ -70,7 +75,8 @@
             "image": "https://azim.hostlin.com/Travic/assets/images/resource/tour-6.jpg",
             "description" : "Enjoy a unique experience in CHINA. Explore the beauty of ASIA and discover the rich history and culture of the place.",
             "discount": "20%",
-            "rating": 4.2
+            "rating": 4.2,
+            "reviewCount":912
         },
         {
             "id": 7,
@@ -82,7 +88,8 @@
             "image": "https://azim.hostlin.com/Travic/assets/images/resource/tour-7.jpg",
             "description" : "Enjoy a unique experience in INDIA. Explore the beauty of ASIA and discover the rich history and culture of the place.",
             "discount": "25%",
-            "rating": 4.1
+            "rating": 4.1,
+            "reviewCount":1254
         },
         {
             "id": 8,
@@ -94,7 +101,8 @@
             "image": "https://azim.hostlin.com/Travic/assets/images/resource/tour-8.jpg",
             "description" : "Explore the beauty of AMERICA and discover the rich history and culture of the place. Enjoy a unique experience in USA.",
             "discount": "24%",
-            "rating": 4.8
+            "rating": 4.8,
+            "reviewCount":387
         },
         {
             "id": 9,
@@ -106,7 +114,8 @@
             "image": "https://azim.hostlin.com/Travic/assets/images/resource/tour-12.jpg",
             "description" : "Explore the beauty of ASIA and discover the rich history and culture of the place. Enjoy a unique experience in JAPAN.",
             "discount": "20%",
-            "rating": 5
+            "rating": 5,
+            "reviewCount":2310
         },
         {
             "id": 10,
@@ -118,7 +127,8 @@
             "image": "https://travel.usnews.com/dims4/USNEWS/6711694/2147483647/resize/445x280%5E%3E/crop/445x280/quality/85/?url=https%3A%2F%2Ftravel.usnews.com%2Fimages%2Fvictoria_falls_cropped_445x280_urQE1cw.jpg",
             "description" : "Enjoy a unique experience in AFRICA. Explore the beauty of AFRICA and discover the rich history and culture of the place.",
             "discount": "10%",
-            "rating": 4.5
+            "rating": 4.5,
+            "reviewCount":4125
         },
         {
             "id": 11,
@@ -130,7 +140,8 @@
             "image": "https://azim.hostlin.com/Travic/assets/images/resource/tour-14.jpg",
             "description" : "Enjoy a unique experience in ITALY. Explore the beauty of EUROPE and discover the rich history and culture of the place.",
             "discount": "30%",
-            "rating": 5
+            "rating": 5,
+            "reviewCount":837
         },
         {
             "id": 12,
@@ -142,7 +153,8 @@
             "image": "https://azim.hostlin.com/Travic/assets/images/resource/tour-15.jpg",
             "description" : "Enjoy a unique experience in CHINA. Explore the beauty of ASIA and discover the rich history and culture of the place.",
             "discount": "30%",
-            "rating": 4.2
+            "rating": 4.2,
+            "reviewCount":1659
         },
         {
             "id": 13,
@@ -154,7 +166,8 @@
             "image": "https://azim.hostlin.com/Travic/assets/images/resource/tour-17.jpg",
             "description" : "Explore the beauty of AMERICA and discover the rich history and culture of the place. Enjoy a unique experience in USA.",
             "discount": "20%",
-            "rating": 4.8
+            "rating": 4.8,
+            "reviewCount":3241
         },
         {
             "id": 14,
@@ -166,7 +179,8 @@
             "image": "https://azim.hostlin.com/Travic/assets/images/resource/tour-18.jpg",
             "description" : "Explore the beauty of ASIA and discover the rich history and culture of the place. Enjoy a unique experience in JAPAN.",
             "discount": "20%",
-            "rating": 4.8
+            "rating": 4.8,
+            "reviewCount":789
         },
         {
             "id": 15,
@@ -178,7 +192,8 @@
             "image": "https://www.touropia.com/gfx/b/2012/07/saint_basils_cathedral.jpg",
             "description" : "Enjoy a unique experience in RUSSIA. Explore the beauty of EUROPE and discover the rich history and culture of the place.",
             "discount": "10%",
-            "rating": 4
+            "rating": 4,
+            "reviewCount":2002
         },
         {
             "id": 16,
@@ -190,7 +205,8 @@
             "image": "https://viatravelers.com/wp-content/uploads/2022/03/Lugano-Switzerland.jpg.webp",
             "description" : "Enjoy a unique experience in SWITZERLAND. Explore the beauty of EUROPE and discover the rich history and culture of the place.",
             "discount": "25%",
-            "rating": 4.2
+            "rating": 4.2,
+            "reviewCount":1156
         },
         {
             "id": 17,
@@ -202,7 +218,8 @@
             "image": "https://azim.hostlin.com/Travic/assets/images/resource/tour-4.jpg",
             "description" : "Enjoy a unique experience in AFRICA. Explore the beauty of AFRICA and discover the rich history and culture of the place.",
             "discount": "30%",
-            "rating": 4.5
+            "rating": 4.5,
+            "reviewCount":4823
         },
         {
             "id": 18,
@@ -214,9 +231,26 @@
             "image": "https://assets.traveltriangle.com/blog/wp-content/uploads/2017/05/Casablanca.jpg",
             "description" : "Enjoy a unique experience in MOROCCO. Explore the beauty of AFRICA and discover the rich history and culture of the place.",
             "discount": "30%",
-            "rating": 4.8
+            "rating": 4.8,
+            "reviewCount":981
         }
     ]
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 

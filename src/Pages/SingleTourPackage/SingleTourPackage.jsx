@@ -3,8 +3,9 @@ import { useLoaderData } from "react-router-dom"
 
 const SingleTourPackage = () => {
 
-    const hotel = useLoaderData()
-    console.log(hotel)
+    const packages = useLoaderData()
+    console.log(packages)
+
 
   return (
     <div>
