@@ -1,6 +1,6 @@
 .searchbar_wrapper {
   height: 400px;
-  width: 320px;
+  max-width: 320px;
   background: #fff;
   border-radius: 1rem;
   padding: 1rem;
@@ -46,4 +46,19 @@
   color: #fff;
   font-weight: 600;
   border-radius: .5rem;
+}
+
+/* @media (max-width: 992px) {
+  .searchbar_wrapper{
+    position: absolute;
+    top: 20rem;
+    width: 100%;
+    left: 0;
+  }
+} */
+
+@media (max-width: 992px) {
+  .searchbar_wrapper{
+    min-width: 100%;
+  }
 }

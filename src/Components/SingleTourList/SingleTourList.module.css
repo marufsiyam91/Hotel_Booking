@@ -132,3 +132,23 @@
 .single_tourlist_detail .contact{
     display: flex;gap: 1rem;
 }
+
+
+@media (max-width: 768px) {
+    .single_tourlist_wrapper{
+        margin: 0 auto;
+        height: 30rem;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 1.5rem;
+        max-width: 520px;
+    }
+
+    .single_tourlist_detail{
+        gap: .6rem;
+    }
+
+    .single_tourlist_detail h2{
+        margin-bottom: .5rem;
+    }
+}

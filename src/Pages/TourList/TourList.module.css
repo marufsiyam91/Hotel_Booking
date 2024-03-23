@@ -1,6 +1,7 @@
 .tour_list_container{
     width: 100%;
     background: #faf6f2;
+    position: relative;
 }
 
 .tour_list_wrapper{
@@ -20,4 +21,16 @@
     display: grid;
     grid-template-columns: 1fr 3fr;
     gap: 1rem;
+}
+
+.tour_list_showcase_area{
+    position: relative;
+    z-index: 0;
+}
+
+@media (max-width: 992px) {
+    .Searchbar_tourlist_wrapper{
+        display: flex;
+        flex-direction: column;
+    }
 }

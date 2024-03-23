@@ -20,6 +20,11 @@ const SingleTourList = ({
     reviewCount,
   },
 }) => {
+
+
+
+  
+
   return (
     <div className={styles.single_tourlist_container}>
       <div className={styles.single_tourlist_wrapper}>
