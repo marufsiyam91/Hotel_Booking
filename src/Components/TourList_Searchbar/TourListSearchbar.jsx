@@ -1,12 +1,21 @@
+import { useState } from "react";
 import styles from "./TourListSearchbar.module.css";
 
-const TourListSearchbar = () => {
+const TourListSearchbar = ({handleClick}) => {
+
+  const [sortedData, setSortedData] = useState('')
+
+
+  const handleSort = (e) => {
+    setSortedData(e.target.value)
+  }
+
   return (
     <div className={styles.searchbar_wrapper}>
       <h3>Search Tour</h3>
       <div className={styles.search_filter}>
         <label>
-          <select name="destination" id="destination">
+          <select name="destination" id="destination" onChange={handleSort}>
             <option value="select">Select Destination</option>
             <option value="asia">Asia</option>
             <option value="america">America</option>
@@ -35,7 +44,7 @@ const TourListSearchbar = () => {
         </label>
       </div>
 
-      <button>Find Now</button>
+      <button onClick={() => handleClick(sortedData)} >Find Now</button>
     </div>
   );
 };

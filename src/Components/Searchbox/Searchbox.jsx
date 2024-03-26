@@ -1,7 +1,7 @@
 import styles from "./Searchbox.module.css";
 import "react-date-range/dist/styles.css"; // main css file
 import "react-date-range/dist/theme/default.css"; // theme css file
-import { useState } from "react";
+import { useContext, useState } from "react";
 import { DateRange } from "react-date-range";
 import { CiMap } from "react-icons/ci";
 import { BiCategory } from "react-icons/bi";
@@ -12,6 +12,7 @@ import { MdOutlineKeyboardArrowDown } from "react-icons/md";
 
 const Searchbox = () => {
   const [showCalender, setShowCalender] = useState(false);
+
 
   const [state, setState] = useState([
     {

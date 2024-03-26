@@ -16,7 +16,7 @@ const SingleTourPackage = () => {
   useEffect(() => {
     const fetchTourData = async () => {
       const tourId = id;
-      const response = await fetch(`http://localhost:3000/tours/${tourId}`);
+      const response = await fetch(`https://travelbooking-2ufk.onrender.com/tours/${tourId}`);
       const data = await response.json();
       setTourData(data);
       setIsLoading(false);
@@ -56,8 +56,21 @@ const SingleTourPackage = () => {
           </div>
 
           <div className={styles.more_tour_detail}>
-            <h3>About this Tour</h3>
-            <p>{tourData.description}the world’s largest of lizards in their natural environment. islands of the Komodo National Park. Although Ulta and Sephora offer many of the same brands and products – Sephora's offering is priced significantly higher than Ulta's. On average, the makeup at Sephora is 65% more expensive, the category with the lowest percent change. Skincare and haircare are 100% and 104% more expensive, respectively.`</p>
+            <div className={styles.about_tour}>
+              <h3>About this Tour</h3>
+              <p>
+                {tourData.description}the world’s largest of lizards in their
+                natural environment. islands of the Komodo National Park.
+                Although Ulta and Sephora offer many of the same brands and
+                products – Sephora's offering is priced significantly higher
+                than Ulta's. On average, the makeup at Sephora is 65% more
+                expensive, the category with the lowest percent change. Skincare
+                and haircare are 100% and 104% more expensive, respectively.`
+              </p>
+            </div>
+            <div className={styles.included_excluded}>
+              <h3>Included and Excluded</h3>
+            </div>
           </div>
         </div>
       )}

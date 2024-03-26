@@ -1,14 +1,17 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
-import App from './App.jsx'
-import './index.css'
-import { RouterProvider } from 'react-router-dom'
-import Routes from './Routes/Routes.jsx'
+import React from "react";
+import ReactDOM from "react-dom/client";
+import App from "./App.jsx";
+import "./index.css";
+import { RouterProvider } from "react-router-dom";
+import Routes from "./Routes/Routes.jsx";
+import TourContextProvider from "./Context/TourContext.jsx";
 
-ReactDOM.createRoot(document.getElementById('root')).render(
+ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
+    <TourContextProvider>
       <RouterProvider router={Routes}>
         <App />
       </RouterProvider>
-  </React.StrictMode>,
-)
+    </TourContextProvider>
+  </React.StrictMode>
+);

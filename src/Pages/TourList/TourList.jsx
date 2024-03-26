@@ -1,7 +1,7 @@
 import styles from "./TourList.module.css";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import PageTop from "../../Components/PageTop/PageTop";
-import { useEffect } from "react";
+// import { useEffect } from "react";
 import SingleTourList from "../../Components/SingleTourList/SingleTourList";
 import TourListSearchbar from "../../Components/TourList_Searchbar/TourListSearchbar";
 
@@ -9,10 +9,17 @@ const TourList = () => {
   const [tours, setTours] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:3000/tours")
+    fetch("https://travelbooking-2ufk.onrender.com/tours")
       .then((res) => res.json())
       .then((data) => setTours(data));
   }, []);
+
+    const fetchTours = async (sortBy) => {
+      const response = await fetch(`https://travelbooking-2ufk.onrender.com/tours?region=${sortBy}`);
+      const data = await response.json();
+      setTours(data); 
+    };
+
 
   return (
     <div className={styles.tour_list_container}>
@@ -28,7 +35,7 @@ const TourList = () => {
 
       <div className={styles.serachbar_tourlist_container}>
         <div className={styles.Searchbar_tourlist_wrapper}>
-          <TourListSearchbar />
+          <TourListSearchbar handleClick={fetchTours}/>
 
           <div className={styles.tour_list_showcase_area}>
             {tours.map((tour) => (
