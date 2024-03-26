@@ -4,13 +4,12 @@ import PageTop from "../../Components/PageTop/PageTop";
 import { useEffect } from "react";
 import SingleTourList from "../../Components/SingleTourList/SingleTourList";
 import TourListSearchbar from "../../Components/TourList_Searchbar/TourListSearchbar";
-import Searchbox from "./../../Components/Searchbox/Searchbox";
 
 const TourList = () => {
   const [tours, setTours] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:8800/hotels")
+    fetch("http://localhost:3000/tours")
       .then((res) => res.json())
       .then((data) => setTours(data));
   }, []);

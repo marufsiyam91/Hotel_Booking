@@ -6,7 +6,7 @@ import { BsArrowRight } from "react-icons/bs";
 import { NavLink } from "react-router-dom";
 
 const SingleTour = ({
-  tour: { title, country, price, stayingtime, image, discount, rating, id },
+  tour: { title, country, price, stayingtime, image, rating, id },
 }) => {
 
   console.log(id);

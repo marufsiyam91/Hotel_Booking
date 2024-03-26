@@ -8,7 +8,7 @@
     "build": "vite build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
-    "server": "json-server --watch TravelPackages.json --port 8800"
+    "server": "json-server --watch TravelPackages.json --port 8888"
   },
   "dependencies": {
     "date-fns": "^3.1.0",

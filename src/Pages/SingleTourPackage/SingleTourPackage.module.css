@@ -1,0 +1,64 @@
+.single_tourdetail_wrapper{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.single_tourdetail{
+    max-width: 95%;
+    margin: 0 auto;
+    padding: 4rem 0;
+}
+
+.tourlist_images{
+    max-width: 100%;
+    /* border: 1px solid; */
+    border-radius: 2rem;
+    overflow: hidden;
+    margin: 0 auto;
+    height: 600px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: .5rem;
+    margin-bottom: 2rem;
+}
+
+.tourlist_images img{
+    position: relative;
+    object-fit: cover;
+    width: auto;
+    height: 100%;
+}
+
+.tourlist_block_image{
+    height: 100%;
+    display: flex;
+    gap: .5rem;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+
+.tour_country_review{
+    display: flex;
+    gap: 2rem;
+}
+
+.tour_country_review p{
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    color: var(--primarycolor);
+}
+
+.tour_country_review p span{
+    font-weight: 600;
+    color: var(--grayishcolor);
+}
+
+.tourlist_details h2{
+    color: #212121;
+    font-family: var(--specialfont);
+    font-size: 2.2rem;
+    font-weight: 600;
+}
