@@ -6,12 +6,16 @@ import FeaturedSortBtn from "../FeaturedSortBtn/FeaturedSortBtn";
 const TourPackages = () => {
   const [tours, setTours] = useState([]);
   const [state, setState] = useState('ASIA')
+  const [isLoading, setIsLoading] = useState(true)
 
   useEffect(() => {
     fetch('https://travelbooking-2ufk.onrender.com/tours')
     .then(res => res.json())
     .then(data => setTours(data))
+    setIsLoading(false)
   }, [])
+
+  console.log(tours)
 
 
   const handleClick = (filter) => {
@@ -34,12 +38,14 @@ const TourPackages = () => {
             <FeaturedSortBtn isColored={state} onClick={() => handleClick('EUROPE')}>EUROPE</FeaturedSortBtn>
           </div>
         </div>
-
+      {
+        !isLoading &&
         <div className={styles.tour_packages_container}>
           {tours.filter(tour => tour.region === state).map((tour) => (
             <SingleTour key={tour.id} tour={tour} />
           ))}
         </div>
+      }
         </div>
       </div>
     </div>

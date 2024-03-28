@@ -11,7 +11,7 @@ const TourList = () => {
   const [pageSize, setPageSize] = useState(6)
 
   useEffect(() => {
-    fetch(`https://travelbooking-2ufk.onrender.com/tours?page=${currentPage}&pageSize${pageSize}`)
+    fetch(`https://travelbooking-2ufk.onrender.com/pagenatedTours?page=${currentPage}&pageSize${pageSize}`)
     .then((res) => res.json())
     .then((data) => setTours(data.tours)); 
 }, [currentPage, pageSize]);
