@@ -61,6 +61,41 @@
     font-family: var(--specialfont);
     font-size: 2.2rem;
     font-weight: 600;
+    
+}
+
+.about_tour, .included_excluded_wrapper{
+    padding-bottom: 1rem;
+}
+
+.about_tour h3, .highlight_wrapper h3, .included_excluded_wrapper h3{
+    font-family: var(--specialfont);
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin: 1rem 0;
+}
+
+
+.included_excluded{
+    display: flex;
+    justify-content: space-between;
+}
+
+.included p span{
+    color: rgb(0, 199, 133);
+    font-weight: 700;
+}
+
+.excluded p span{
+    color: rgb(226, 26, 26);
+    font-weight: 700;
+}
+
+.included_excluded p{
+    display: flex;
+    align-items: center;
+    gap: .8rem;
+    margin-bottom: .8rem;
 }
 
 
