@@ -7,6 +7,7 @@ import styles from "./SingleTourPackage.module.css";
 import { CiLocationOn } from "react-icons/ci";
 import { IoCheckmarkOutline } from "react-icons/io5";
 import { RxCross1 } from "react-icons/rx";
+import { IoCheckmarkCircle } from "react-icons/io5";
 
 const SingleTourPackage = () => {
   const [tourData, setTourData] = useState(null);
@@ -91,11 +92,11 @@ const SingleTourPackage = () => {
                 <h3>Top Highlights</h3>
                 <p>Komodo Island is one of the only places in the world where you can spot Komodo Dragons the world’s largest of lizards in their natural environment. islands of the Komodo National Park.</p>
                 <div className={styles.highlight}>
-                  <p>Easily generate images with detailed text prompts</p>
-                  <p>Customize your images with different styles, moods, colors</p>
-                  <p>Generate high-quality images with up to 8K resolution</p>
-                  <p>Customize your images with different styles, moods, colors</p>
-                  <p>Generate high-quality images with up to 8K resolution</p>
+                  <p> <span><IoCheckmarkCircle /></span> Easily generate images with detailed text prompts</p>
+                  <p> <span><IoCheckmarkCircle /></span> Customize your images with different styles, moods, colors</p>
+                  <p> <span><IoCheckmarkCircle /></span> Generate high-quality images with up to 8K resolution</p>
+                  <p> <span><IoCheckmarkCircle /></span> Customize your images with different styles, moods, colors</p>
+                  <p> <span><IoCheckmarkCircle /></span> Generate high-quality images with up to 8K resolution</p>
                 </div>
               </div>
             </div>

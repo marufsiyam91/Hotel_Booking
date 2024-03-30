@@ -1,7 +1,7 @@
 import { useState } from "react";
 import styles from "./TourListSearchbar.module.css";
 
-const TourListSearchbar = ({handleClick}) => {
+const TourListSearchbar = ({handleClick, handleChange}) => {
 
   const [sortedData, setSortedData] = useState('')
 
@@ -14,6 +14,7 @@ const TourListSearchbar = ({handleClick}) => {
     <div className={styles.searchbar_wrapper}>
       <h3>Search Tour</h3>
       <div className={styles.search_filter}>
+        <input type="text" name="country" placeholder="search for country" onChange={handleChange} />
         <label>
           <select name="destination" id="destination" onChange={handleSort}>
             <option value="select">Select Destination</option>

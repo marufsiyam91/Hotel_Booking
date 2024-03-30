@@ -1,5 +1,5 @@
 .searchbar_wrapper {
-  height: 400px;
+  max-height: 480px;
   max-width: 320px;
   background: #fff;
   border-radius: 1rem;
@@ -7,6 +7,16 @@
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  gap: 1rem;
+}
+
+.searchbar_wrapper input{
+  width: 100%;
+  background: #F4F4F4;
+  padding: 1rem;
+  font-family: var(--secondaryfont);
+  font-size: 1.2rem;
+  border-radius: 0.5rem;
 }
 
 .searchbar_wrapper label {
