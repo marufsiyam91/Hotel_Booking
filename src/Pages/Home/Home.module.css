@@ -1,6 +1,7 @@
 .hero_input_area{
      position: relative;
      transform: translateY(-50%);
+     z-index: 1;
 }
 
 .about_us_main_area{

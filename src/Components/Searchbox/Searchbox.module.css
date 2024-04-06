@@ -221,4 +221,11 @@ label span {
      .calender_btn{
           border: none;
      }
+
+     .date_calender {
+      position: absolute;
+      top: 11rem;
+      right: 50%;
+      transform: translatex(50%);
+    }
 }
