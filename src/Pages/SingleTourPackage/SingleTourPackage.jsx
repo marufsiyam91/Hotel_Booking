@@ -8,6 +8,7 @@ import { CiLocationOn } from "react-icons/ci";
 import { IoCheckmarkOutline } from "react-icons/io5";
 import { RxCross1 } from "react-icons/rx";
 import { IoCheckmarkCircle } from "react-icons/io5";
+import Loader from "../../Components/Loader/Loader";
 
 const SingleTourPackage = () => {
   const [tourData, setTourData] = useState(null);
@@ -32,8 +33,16 @@ const SingleTourPackage = () => {
 
   return (
     <div className={styles.single_tourdetail_wrapper}>
-      {!isLoading && (
-        <div className={styles.single_tourdetail}>
+      {isLoading ?
+
+      (<div className={styles.loader}>
+        <h2>loading.......................</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae velit quis eos, nihil mollitia deleniti impedit quod, eius qui ullam beatae sapiente expedita provident dolor possimus quibusdam nisi? Ea, dolorum.</p>
+        <Loader/>
+      </div>)
+        :
+        (
+          <div className={styles.single_tourdetail}>
           <div className={styles.tourlist_images}>
             <div>
               <img src={tourData.TouristPlaces[0]} alt={tourData.country} />

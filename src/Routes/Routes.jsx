@@ -10,6 +10,7 @@ import TourList from '../Pages/TourList/TourList'
 import SingleTourPackage from '../Pages/SingleTourPackage/SingleTourPackage'
 
 const Routes = createBrowserRouter ([
+
      {
           path: '/',
           element: <App/>,

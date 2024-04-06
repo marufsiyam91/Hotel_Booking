@@ -51,7 +51,7 @@ const TourList = () => {
   }, [country]);
 
   return (
-    <div className={styles.tour_list_container}>
+      <div className={styles.tour_list_container}>
       <div className={styles.tour_list_top_part}>
         <PageTop
           img={
@@ -82,15 +82,15 @@ const TourList = () => {
       </div>
       <div className={styles.pagination_controls}>
         <button
-          style={{ display: currentPage === 1 ? "none" : "block" }}
           onClick={() => setCurrentPage((prevState) => prevState - 1)}
+          disabled={currentPage === 3}
         >
           Previous
         </button>
-        <span>Current Page: {currentPage}</span>
+        <span>Page: {currentPage}</span>
         <button
-          style={{ display: currentPage === 3 ? "none" : "block" }}
           onClick={() => setCurrentPage((prevState) => prevState + 1)}
+          disabled={currentPage === 3}
         >
           Next
         </button>
