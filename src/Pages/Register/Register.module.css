@@ -2,12 +2,14 @@
 .register_form{
      max-width: 700px;
      margin: 0 auto;
-     height: auto;
+     height: calc(100vh - 4rem);
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
      text-align: center;
      background: #fff;
      border-radius: 1rem;
      font-family: var(--thirdfont);
-     padding: 3rem;
 }
 
 .register_form img{
@@ -16,25 +18,16 @@
 
 .register_form .google_signup_btn{
      padding: 8px 18px;
-     border: none;
      border-radius: 6px;
-     font-size: .9rem;
+     font-size: 1.5rem;
      font-weight: 500;
-     margin: 1rem 0;
-     font-size: .9rem;
+     margin: 1rem auto;
+     border: 1px solid #bbbbbb;
      font-weight: 500;
-}
-
-.flex_register_google{
      display: flex;
-     align-items: center;
+     gap: .5rem;
 }
 
-.register_form .google_icon{
-     font-size: 1.2rem;
-     transform: translateY(12%);
-     margin-right: 5px;
-}
 
 .register_form h2{
      margin-bottom: .3rem;
@@ -51,6 +44,7 @@
 .register_form p{
      font-size: 1rem;
      font-weight: 500;
+     margin-top: 2.5rem;
 }
 
 .input_boxes{

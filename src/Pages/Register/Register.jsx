@@ -81,10 +81,8 @@ const Register = () => {
           <h2><span>Sign up</span> to continue.</h2>
           <p>Unlock a world of exclusive content, enjoy special offers, and be the first to dive into exciting news and updates by joining our community!</p>
           <button type='button' onClick={handleGoogleSingup} className={styles.google_signup_btn}>
-            <span className={styles.flex_register_google}>
-              <span className={styles.google_icon}><FcGoogle /></span>
-              Continue with Google
-            </span>
+           <FcGoogle style={{fontSize: '2rem'}}/>
+              <span>Continue with Google</span>
           </button> 
           
           <ToastContainer />
@@ -129,7 +127,7 @@ const Register = () => {
 
           <p>
             already have an account?{' '}
-            <NavLink to={'/signin'}>Sign in</NavLink>
+            <NavLink style={{textDecoration: 'underline', color: '#1976D2'}} to={'/signin'}>Sign in</NavLink>
           </p>
 
 
