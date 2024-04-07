@@ -5,6 +5,8 @@ import { useState } from 'react';
 import FormValidation from './Formvalidation'; // Assuming Formvalidation component is in a separate file
 import { signInWithPopup, GoogleAuthProvider, createUserWithEmailAndPassword } from "firebase/auth";
 import { auth } from "../../config/Firebase";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 
 const Register = () => {
@@ -24,6 +26,11 @@ const Register = () => {
       [e.target.name]: e.target.value,
     });
   };
+
+
+
+
+  const notify = () => toast("Signed up successfully!");
 
 
 
@@ -47,6 +54,14 @@ const Register = () => {
       // Signed in 
       const user = userCredential.user;
       console.log(user)
+      notify()
+      setData({
+        ...data,
+        name: '',
+        email: '',
+        password: '',
+        confirmpassword: '',
+      })
       // ...
     })
     .catch((error) => {
@@ -56,21 +71,23 @@ const Register = () => {
   };
 
 
-
+  
   return (
-    <div className="container">
+    <div style={{ margin: '0 auto', maxWidth: '1280px'}} className="container">
       <div className={styles.form_wrapper}>
         <form onSubmit={handleSubmit} className={styles.register_form}>
-          <img src={'https://azim.hostlin.com/Travic/assets/images/logo.png'} alt="Travik" />
 
-          <h2>WELCOME BACK</h2>
-          <h4>Welcome to Travic Booking Community</h4>
+          <h2>Weclome Back! Please</h2>
+          <h2><span>Sign up</span> to continue.</h2>
+          <p>Unlock a world of exclusive content, enjoy special offers, and be the first to dive into exciting news and updates by joining our community!</p>
           <button type='button' onClick={handleGoogleSingup} className={styles.google_signup_btn}>
             <span className={styles.flex_register_google}>
               <span className={styles.google_icon}><FcGoogle /></span>
               Continue with Google
             </span>
           </button> 
+          
+          <ToastContainer />
 
           <div className={styles.input_boxes}>
             <input
@@ -114,6 +131,8 @@ const Register = () => {
             already have an account?{' '}
             <NavLink to={'/signin'}>Sign in</NavLink>
           </p>
+
+
         </form>
       </div>
     </div>
