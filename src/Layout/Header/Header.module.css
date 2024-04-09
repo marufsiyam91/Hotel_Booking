@@ -85,11 +85,11 @@
      font-weight: 500;
 }
 
-.mainmenu ul li a .active{
+.mainmenu ul li a.active{
      color: red;
 }
 
-.signinup_btns button{
+.signinup_btns a{
      padding: 10px 18px;
      border: none;
      outline: none;
@@ -164,24 +164,29 @@
      .mainmenu ul li{
           width: 100%;
           border-bottom: 1px solid #ffffff98;
+          display: flex;
 
      }
      
      .mainmenu ul li a{
           color: #ffffff;
-          margin-left: 0.8rem;
+          margin: 0.8rem;
      }
 
      .mainmenu ul li button{
           padding-bottom: 1rem;
      }
 
-     .mobile_menu_wrapper, .mainmenu ul, .signinup_btns{
+     .mobile_menu_wrapper, .signinup_btns{
           flex-direction: column;
           gap: 1rem;
      }
 
-     .signinup_btns button{
+     .mainmenu ul{
+          flex-direction: column;
+     }
+
+     .signinup_btns a{
           padding: 0;
           border: none;
           outline: none;
@@ -202,7 +207,7 @@
           margin-left: 0.8rem;
      }
 
-     .signinup_btns button {
+     .signinup_btns a {
           width: 100%;
           margin: 0;
           border-bottom: 1px solid;

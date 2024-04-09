@@ -10,21 +10,20 @@ import { useEffect, useState } from "react";
 
 const Header = () => {
   const [isShowSidebar, setIsShowSidebar] = useState(true);
-  const [navbar, setNavbar] = useState(false)
+  const [navbar, setNavbar] = useState(false);
 
   const menuClass = isShowSidebar ? "mainmenu_wrapper" : "mobile_menu_wrapper";
-  const container = navbar ? 'scroller' : 'navbar_container' ;
+  const container = navbar ? "scroller" : "navbar_container";
 
   useEffect(() => {
-    window.addEventListener('scroll', () => {
-      if(window.scrollY >= 80){
-        setNavbar(true)
-      } else{
-        setNavbar(false)
+    window.addEventListener("scroll", () => {
+      if (window.scrollY >= 50) {
+        setNavbar(true);
+      } else {
+        setNavbar(false);
       }
-  })
-  }, [])
-
+    });
+  }, []);
 
   return (
     <div className={styles.container}>
@@ -53,34 +52,78 @@ const Header = () => {
               <div className={styles.mainmenu}>
                 <ul>
                   <li>
-                    <NavLink to={"/"}>
-                      <button>Home</button>
+                    <NavLink
+                      to={"/"}
+                      style={({ isActive }) => {
+                        return {
+                          color: isActive && "#ff6b00",
+                        };
+                      }}
+                    >
+                      Home
                     </NavLink>
                   </li>
                   <li>
-                    <NavLink to={"/tourlist"}>
-                      <button>Tour List</button>
+                    <NavLink
+                      to={"/tourlist"}
+                      style={({ isActive }) => {
+                        return {
+                          color: isActive && "#ff6b00",
+                        };
+                      }}
+                    >
+                      Tour List
                     </NavLink>
                   </li>
 
                   <li>
-                    <NavLink to={"/about"}>
-                      <button>About</button>
+                    <NavLink
+                      to={"/about"}
+                      style={({ isActive }) => {
+                        return {
+                          color: isActive && "#ff6b00",
+                        };
+                      }}
+                    >
+                      About
                     </NavLink>
                   </li>
                   <li>
-                    <NavLink to={"/contact"}>
-                      <button>Contact</button>
+                    <NavLink
+                      to={"/contact"}
+                      style={({ isActive }) => {
+                        return {
+                          color: isActive && "#ff6b00",
+                        };
+                      }}
+                    >
+                      Contact
                     </NavLink>
                   </li>
                 </ul>
               </div>
 
               <div className={styles.signinup_btns}>
-                <NavLink to={"/signup"}>
-                  <button>Register</button>
+                <NavLink
+                  to={"/signup"}
+                  style={({ isActive }) => {
+                    return {
+                      background: isActive && "none",
+                      color: isActive && "#ff6b00",
+                    };
+                  }}
+                >
+                  Register
                 </NavLink>
-                <NavLink to={"/signin"}>
+                <NavLink
+                  to={"/signin"}
+                  style={({ isActive }) => {
+                    return {
+                      background: isActive && "none",
+                      color: isActive && "#ff6b00",
+                    };
+                  }}
+                >
                   <button>Sign in</button>
                 </NavLink>
               </div>
