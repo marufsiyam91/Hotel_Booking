@@ -1,15 +1,20 @@
 import styles from './Login.module.css'
 import { FcGoogle } from "react-icons/fc";
-import { signInWithEmailAndPassword } from "firebase/auth";
+import { GoogleAuthProvider, signInWithEmailAndPassword, signInWithPopup } from "firebase/auth";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { auth } from "../../config/Firebase";
 import { NavLink } from 'react-router-dom';
-import { useState } from 'react';
+import { useContext, useState } from 'react';
+import { useNavigate } from 'react-router-dom';
+import { TourContext } from '../../Context/TourContext';
 
 const Login = () => {
 
   const notify = () => toast("Signed in successfully!");
+  const errorNotify = () => toast("Wrong email or password!");
+  const navigate = useNavigate()
+  const {dispatch} = useContext(TourContext)
 
   const [userData, setUserData] = useState({
     email: '',
@@ -27,8 +32,23 @@ const Login = () => {
         email: '',
         password: ''
       })
+      navigate('/')
       notify()
+      dispatch({type: 'isUser'})
     })
+    .catch(error => {
+      console.log(error)
+      setUserData({
+        email: '',
+        password: ''
+      })
+      errorNotify()
+    })
+  }
+
+  const provider = new GoogleAuthProvider();
+  const handleGoogleSignin = () => {
+    signInWithPopup(auth, provider)
   }
 
   return (
@@ -47,6 +67,7 @@ const Login = () => {
         <button
           type="button"
           className={styles.google_signup_btn}
+          onClick={handleGoogleSignin}
         >
           <FcGoogle style={{ fontSize: "2rem" }} />
           <span>Continue with Google</span>

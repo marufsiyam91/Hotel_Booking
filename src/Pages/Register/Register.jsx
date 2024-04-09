@@ -31,6 +31,8 @@ const Register = () => {
 
 
   const notify = () => toast("Signed up successfully!");
+  const errorNotify = () => toast('wrong user credential!');
+
 
 
 
@@ -67,6 +69,7 @@ const Register = () => {
     .catch((error) => {
       const errorMessage = error.message;
       console.log(errorMessage)
+      errorNotify()
     });
   };
 

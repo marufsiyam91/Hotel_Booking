@@ -6,11 +6,18 @@ import { FaFacebookF } from "react-icons/fa";
 import { BsTwitterX } from "react-icons/bs";
 import { FaLinkedin } from "react-icons/fa";
 import { FaDiscord } from "react-icons/fa";
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
+import { TourContext } from "../../Context/TourContext";
+import { onAuthStateChanged, signOut } from "firebase/auth";
+import { auth } from "../../config/Firebase";
 
 const Header = () => {
   const [isShowSidebar, setIsShowSidebar] = useState(true);
   const [navbar, setNavbar] = useState(false);
+  const {
+    state: { user }, dispatch
+  } = useContext(TourContext);
+  console.log(user)
 
   const menuClass = isShowSidebar ? "mainmenu_wrapper" : "mobile_menu_wrapper";
   const container = navbar ? "scroller" : "navbar_container";
@@ -24,6 +31,26 @@ const Header = () => {
       }
     });
   }, []);
+
+  useEffect(() => {
+    const unsubscribe = onAuthStateChanged(auth, (currentUser) => {
+      dispatch({type: 'storeUser'})
+    });
+
+    return unsubscribe;
+  }, []);
+
+
+  const hanldeSignout = () => {
+    signOut(auth).then(() => {
+      // Sign-out successful.
+      console.log('logged out successfully')
+      dispatch({type: 'userLogout'})
+    }).catch((error) => {
+      // An error happened.
+      console.log(error)
+    });
+  }
 
   return (
     <div className={styles.container}>
@@ -104,28 +131,39 @@ const Header = () => {
               </div>
 
               <div className={styles.signinup_btns}>
-                <NavLink
-                  to={"/signup"}
-                  style={({ isActive }) => {
-                    return {
-                      background: isActive && "none",
-                      color: isActive && "#ff6b00",
-                    };
-                  }}
-                >
-                  Register
-                </NavLink>
-                <NavLink
-                  to={"/signin"}
-                  style={({ isActive }) => {
-                    return {
-                      background: isActive && "none",
-                      color: isActive && "#ff6b00",
-                    };
-                  }}
-                >
-                  <button>Sign in</button>
-                </NavLink>
+                {user ? 
+                (
+                  <NavLink>
+                      <button onClick={hanldeSignout}>Log out</button>
+                    </NavLink>
+                )
+                :
+                (
+                  <>
+                    <NavLink
+                      to={"/signup"}
+                      style={({ isActive }) => {
+                        return {
+                          background: isActive && "none",
+                          color: isActive && "#ff6b00",
+                        };
+                      }}
+                    >
+                      Register
+                    </NavLink>
+                    <NavLink
+                      to={"/signin"}
+                      style={({ isActive }) => {
+                        return {
+                          background: isActive && "none",
+                          color: isActive && "#ff6b00",
+                        };
+                      }}
+                    >
+                      <button>Sign in</button>
+                    </NavLink>
+                  </>
+                )}
               </div>
             </div>
 
