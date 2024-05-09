@@ -3,12 +3,18 @@ import styles from "./TourListSearchbar.module.css";
 
 const TourListSearchbar = ({handleClick, handleChange}) => {
 
-  const [sortedData, setSortedData] = useState('')
+  const [sortingOptions, setSortingOptions] = useState([]);
 
 
   const handleSort = (e) => {
-    setSortedData(e.target.value)
-  }
+    const selectedOption = e.target.value;
+    // Clear previous selection or add new one
+    if (selectedOption === "select" ) {
+      setSortingOptions([]);
+    } else {
+      setSortingOptions([selectedOption]); // Assuming single selection for sorting
+    }
+  };
 
   return (
     <div className={styles.searchbar_wrapper}>
@@ -25,18 +31,18 @@ const TourListSearchbar = ({handleClick, handleChange}) => {
           </select>
         </label>
         <label>
-          <select name="category" id="category">
-            <option value="category">Travel Category</option>
+          <select name="category" id="category" onChange={handleSort}>
+            <option value="select">Travel Category</option>
             <option value="advanture">Advanture Travel</option>
             <option value="air">Air Travel</option>
-            <option value="backpack">BackPacking</option>
-            <option value="bleisure">Bleisure Travel</option>
+            <option value="hill climbing">Hill Climbing</option>
+            <option value="diving">Diving</option>
           </select>
         </label>
 
         <label>
           <select name="guest" id="guest">
-            <option value="guest">How many guest</option>
+            <option value="select">How many guest</option>
             <option value="1/2">1 child 2 adult</option>
             <option value="2/2">2 child 2 adult</option>
             <option value="1/3">1 child 3 adult</option>
@@ -45,7 +51,7 @@ const TourListSearchbar = ({handleClick, handleChange}) => {
         </label>
       </div>
 
-      <button onClick={() => handleClick(sortedData)} >Find Now</button>
+      <button onClick={() => handleClick({ sortingOptions })} >Find Now</button>
     </div>
   );
 };

@@ -23,12 +23,19 @@ const TourList = () => {
 
   }, [currentPage, pageSize, country]);
 
-  const fetchTours = async (sortBy) => {
-    const response = await fetch(
-      `https://travelbooking-2ufk.onrender.com/tours?region=${sortBy}`
-    );
+  const fetchTours = async (sortBy, sortingOptions) => {
+    // ... existing code for fetching tours
+  
+    const urlParams = new URLSearchParams({
+      region: sortBy, // Assuming sorting by region for now
+      // Add sorting parameters here based on sortingOptions array
+      sort: sortingOptions.join(","), // Comma-separated sorting criteria
+    });
+  
+    const response = await fetch(`https://localhost:3000/tours?${urlParams.toString()}`);
+    // ... rest of the code
     const data = await response.json();
-    setTours(data);
+    setTours(data)
   };
 
   const handleChange = (e) => {

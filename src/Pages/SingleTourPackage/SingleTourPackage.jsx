@@ -37,7 +37,6 @@ const SingleTourPackage = () => {
 
       (<div className={styles.loader}>
         <h2>loading.......................</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae velit quis eos, nihil mollitia deleniti impedit quod, eius qui ullam beatae sapiente expedita provident dolor possimus quibusdam nisi? Ea, dolorum.</p>
         <Loader/>
       </div>)
         :

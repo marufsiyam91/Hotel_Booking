@@ -1,7 +1,7 @@
 import styles from "./Searchbox.module.css";
 import "react-date-range/dist/styles.css"; // main css file
 import "react-date-range/dist/theme/default.css"; // theme css file
-import { useContext, useState } from "react";
+import { useState } from "react";
 import { DateRange } from "react-date-range";
 import { CiMap } from "react-icons/ci";
 import { BiCategory } from "react-icons/bi";
@@ -36,11 +36,13 @@ const Searchbox = () => {
       <label className={styles.left_border}>
         <span>
           <CiMap />
-          <input
-            type="text"
-            name="destination"
-            placeholder="Your destination"
-          />
+          <select name="destination" className="w-full">
+            <option value="select">Select Destination</option>
+            <option value="asia">Asia</option>
+            <option value="america">America</option>
+            <option value="africa">Africa</option>
+            <option value="europe">Europe</option>
+          </select>
         </span>
           <MdOutlineKeyboardArrowDown />
         </label>
@@ -62,9 +64,20 @@ const Searchbox = () => {
         <label>
           <span>
           <GoPeople />
-          <input type="number" name="guest" placeholder="Guests number" />
+          <input 
+          type="number" 
+          name="guest" 
+          placeholder="Guests number" 
+          />
           </span>
           <MdOutlineKeyboardArrowDown />
+          {/* <select name="" id="">
+            <option value="select">Select</option>
+            <option value="select">Asia</option>
+            <option value="select">America</option>
+            <option value="select">Africa</option>
+            <option value="select">Europe</option>
+          </select> */}
         </label>
 
         <button onClick={handleShowCalender} className={styles.calender_btn}>

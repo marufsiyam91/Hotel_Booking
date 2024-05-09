@@ -49,6 +49,16 @@ label span {
   border-left: 3px solid var(--primarycolor);
 }
 
+.searchbox_wrapper select{
+  font-size: 0.9rem;
+  outline: none;
+  -webkit-appearance: none;
+  margin-left: 8px;
+  font-family: var(--primaryfont);
+  width: 100%;
+  color: rgb(134, 134, 134);
+}
+
 .searchbox_wrapper input {
   max-width: 120px;
   border: none;
