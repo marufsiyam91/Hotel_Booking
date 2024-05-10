@@ -131,7 +131,7 @@ const Header = () => {
               </div>
 
               <div className={styles.signinup_btns}>
-                {user ? 
+                {!user ? 
                 (
                   <NavLink>
                       <button onClick={hanldeSignout}>Log out</button>
