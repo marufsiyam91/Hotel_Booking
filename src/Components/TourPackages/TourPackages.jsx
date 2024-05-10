@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import styles from "./TourPackages.module.css";
 import SingleTour from "../SingleTour/SingleTour";
 import FeaturedSortBtn from "../FeaturedSortBtn/FeaturedSortBtn";
+import SingleTourLoader from "../SingleTourLoader";
 
 const TourPackages = () => {
   const [tours, setTours] = useState([]);
@@ -38,13 +39,27 @@ const TourPackages = () => {
             <FeaturedSortBtn isColored={state} onClick={() => handleClick('EUROPE')}>EUROPE</FeaturedSortBtn>
           </div>
         </div>
+        
       {
-        !isLoading &&
-        <div className={styles.tour_packages_container}>
+        isLoading ? (
+        <div className="grid grid-cols-4 gap-6 tourLoad">
+          <SingleTourLoader/>
+          <SingleTourLoader/>
+          <SingleTourLoader/>
+          <SingleTourLoader/>
+          <SingleTourLoader/>
+          <SingleTourLoader/>
+        </div>
+        )
+        : 
+        (
+
+          <div className={styles.tour_packages_container}>
           {tours.filter(tour => tour.region === state).map((tour) => (
             <SingleTour key={tour.id} tour={tour} />
           ))}
         </div>
+        )
       }
         </div>
       </div>
