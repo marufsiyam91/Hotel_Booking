@@ -5,6 +5,7 @@ import Subscribe_main from "../../Components/Subscribe_main/Subscribe_main";
 import About_us_info from "../../Components/About_us_info/About_us_info";
 import Choose_Travic from "../../Components/Choose_Travic/Choose_Travic";
 import TourPackages from "../../Components/TourPackages/TourPackages";
+import Blog from "../../Components/Blog";
 
 const Home = () => {
   return (
@@ -28,6 +29,10 @@ const Home = () => {
 
         <div className={styles.tourpackage}>
           <TourPackages />
+        </div>
+
+        <div>
+          <Blog/>
         </div>
 
         <div className={styles.Subscribe_area}>
