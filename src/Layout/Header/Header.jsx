@@ -62,12 +62,20 @@ const Header = () => {
               alt="Travik"
             />
 
-            <button onClick={() => setIsShowSidebar(!isShowSidebar)}>
-              {isShowSidebar ? <TiThMenuOutline /> : <MdOutlineClose />}
+            <button onClick={() => setIsShowSidebar(false)}>
+               <TiThMenuOutline />
             </button>
           </div>
 
+           <div className={!isShowSidebar ? 'fixed w-[100vw] h-[100vh] top-0 right-0 bg-black opacity-70 navback' : ''}></div> 
+
           <div className={styles[menuClass]}>
+
+          <button className="absolute top-4 right-4 text-3xl text-orange-500 closeBtn" onClick={() => setIsShowSidebar(true)}>
+              <MdOutlineClose />
+            </button>
+
+
             <div className={styles.sidebar_logo}>
               <img
                 src={"https://azim.hostlin.com/Travic/assets/images/logo-2.png"}
@@ -76,6 +84,7 @@ const Header = () => {
             </div>
 
             <div className={styles.mainmenu_container}>
+
               <div className={styles.mainmenu}>
                 <ul>
                   <li>

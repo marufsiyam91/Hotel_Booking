@@ -51,6 +51,7 @@ label span {
 
 .searchbox_wrapper select{
   font-size: 0.9rem;
+  background: white;
   outline: none;
   -webkit-appearance: none;
   margin-left: 8px;
